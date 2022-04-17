@@ -10,82 +10,102 @@
 </head>
 <body>
     <div id="container">
-        <div class="selectMenu">
-            <h3>select menuの使い方</h3>
-            <select>
-                <option>- - chose - -</option>
-                <optgroup label="animal">
-                  <option>mouse</option>
-                  <option>rat</option>
-                  <option>macaque</option>
-                </optgroup>
-                <optgroup label="sense">
-                  <option>vision</option>
-                  <option>audition</option>
-                  <option>tacticle</option>
-                </optgroup>
-              </select>
-        </div>
 
-        <div class="input-tag">
-          <h3>inputタグの使い分け</h3>            
-          <table>
-            <tr>
-              <td>URL</td>
-              <td><input type="url"></td>
-            </tr>
-            <tr>
-              <td>メール</td>
-              <td><input type="email"></td>
-            </tr>
-            <tr>
-              <td>番号</td>
-              <td><input type="number"></td>
-            </tr>
-            <tr>
-              <td>電話番号</td>
-              <td><input type="tel"></td>
-            </tr>
-            <tr>
-              <td>日付</td>
-              <td><input type="date"></td>              
-            </tr>
-            <tr>
-              <td>時間</td>
-              <td><input type="time"></td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="input-extend">
-            <h3>フォーカスで伸びるtextbox</h3>
-            <input type="text">
-        </div>
-
-        <div class="form">
-          <h3>formの使い方</h3>
-          <form action="/form.php" method="post">
-            <div>
-              <label for="name">name</label>
-              <input type="text" id="name" name="name" placeholder="20文字以内" maxlength="20">
+      <div class="form">
+        <h3>formの使い方</h3>
+        <form action="#" method="post">
+          <div>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="20文字以内" maxlength="20" required>
           </div>
           <div>
               <label for="message">message</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" name="message" row="4" cols="40"></textarea>
           </div>
           <input type="submit" value="送信する">            
+          <input type="reset" value="リセットする">            
         </form>
       </div>
-      
+
+      <div class="input-tag">
+        <h3>inputタグの使い分け</h3>            
+        <table>
+          <tr>
+            <td>URL</td>
+            <td><input type="url" name="url"></td>
+          </tr>
+          <tr>
+            <td>パスワード</td>
+            <td><input type="password" name="password"></td>
+          </tr>
+          <tr>
+            <td>メール</td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td>番号</td>
+            <td><input type="number" name="number"></td>
+          </tr>
+          <tr>
+            <td>電話番号</td>
+            <td><input type="tel" name="tel"></td>
+          </tr>
+          <tr>
+            <td>日付</td>
+            <td><input type="date" name="date"></td>              
+          </tr>
+          <tr>
+            <td>時間</td>
+            <td><input type="time" name="time"></td>
+          </tr>
+          <tr>
+            <td>ファイル</td>
+            <td><input type="file" name="file"></td>
+          </tr>
+          <tr>
+            <td>range</td>
+            <td><input type="range" name="range" min="0" max="11"></td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td><input type="color" name="color"></td>
+          </tr>
+        </table>
+        <input type="hidden" name="hidden" value="1">
+        <p>input-buttonの機能は、jsで実装する</p>
+        <input type="button" value="button">
+      </div>
+    
       <div class="radio-button">
-        <h3>ラジオボタン・チェックボックス</h3>    
+        <h3>ラジオボタン・チェックボックス</h3>  
+        <p>valueで設定したものが、nameというデータ名の値として送信される</p>  
         <input id="radio1" type="radio" name="color" value="red" checked><label for="radio1">red</label><br>
         <input id="radio2" type="radio" name="color" value="blue"><label for="radio2">blue</label><br>
         <input id="check1" type="checkbox" name="color" value="red" checked><label for="radio1">red</label><br>
         <input id="check2" type="checkbox" name="color" value="blue"><label for="radio2">blue</label><br>
       </div>
 
+      <div class="selectMenu">
+        <h3>select menuの使い方</h3>
+        <select>
+            <option>- - chose - -</option>
+            <optgroup label="animal">
+              <option>mouse</option>
+              <option>rat</option>
+              <option>macaque</option>
+            </optgroup>
+            <optgroup label="sense">
+              <option>vision</option>
+              <option>audition</option>
+              <option>tacticle</option>
+            </optgroup>
+          </select>
+      </div>
 
+      <div class="input-extend">
+        <h3>フォーカスで伸びるtextbox</h3>
+        <input type="text">
+      </div>
 
     </div>
 </body>
