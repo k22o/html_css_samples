@@ -43,11 +43,17 @@
         }
     }
 
-
     #sample6 {
         img {
             -webkit-filter: blur(3px);
             filter: blur(3px);            
+        }
+    }
+
+    #sample7 {
+        video, audio {
+            display: block;
+            margin: 10px auto;
         }
     }
 }

@@ -52,4 +52,9 @@
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
+
+#container #sample7 video, #container #sample7 audio {
+  display: block;
+  margin: 10px auto;
+}
 /*# sourceMappingURL=style.css.map */
