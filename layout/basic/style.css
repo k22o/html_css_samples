@@ -1,0 +1,120 @@
+h3 {
+  background-color: darkgray;
+  color: white;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#container {
+  text-align: center;
+}
+
+#container .left {
+  background-color: salmon;
+  margin: 10px auto;
+}
+
+#container .right {
+  background-color: lightblue;
+  margin: 10px auto;
+}
+
+#container .head {
+  background-color: lightgreen;
+  margin: 10px auto;
+}
+
+#container .foot {
+  background-color: greenyellow;
+  margin: 10px auto;
+}
+
+#container #sample1 {
+  height: 300px;
+}
+
+#container #sample1 .left {
+  display: inline-block;
+  width: 100px;
+  height: 50%;
+}
+
+#container #sample1 .right {
+  display: inline-block;
+  width: 600px;
+  height: 50%;
+}
+
+#container #sample2 {
+  height: 300px;
+}
+
+#container #sample2 .left {
+  display: inline-block;
+  width: 20%;
+  height: 50%;
+}
+
+#container #sample2 .right {
+  display: inline-block;
+  width: 60%;
+  height: 50%;
+}
+
+#container #sample3 {
+  height: 300px;
+}
+
+#container #sample3 .left {
+  display: inline-block;
+  width: 100px;
+  height: 50%;
+}
+
+#container #sample3 .right {
+  display: inline-block;
+  width: 60%;
+  height: 50%;
+  min-width: 400px;
+}
+
+#container #sample4 {
+  height: 300px;
+}
+
+#container #sample4 .head, #container #sample4 .foot {
+  width: 50%;
+  height: 50px;
+  margin: 10px 20%;
+}
+
+#container #sample5 {
+  height: 300px;
+}
+
+#container #sample5 .head, #container #sample5 .foot {
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+}
+
+#container #sample5 #inner {
+  width: 80%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #sample5 #inner .content {
+  width: 30%;
+  height: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: salmon;
+  margin: 10px;
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */

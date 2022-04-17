@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>position</title>
+</head>
+<body>
+    <div id="container">
+        <div class="inner">
+            <h3>positionとz-indexによる位置指定</h3>
+            <ul>
+                <li>親要素のpositionをrelative or absoluteにして、子要素をabsoluteにすることで、
+                        親要素からの位置で定めることができる (defaultは、全てstatic)         
+                </li>
+                <li>
+                    要素が重なる場合、z-indexの大きい方が上に表示される。
+                </li>
+                <li>
+                    ウィンドウに対する固定はfix
+                </li>
+            </ul>
+            <div class="row1">
+                <div class="column1-1">1</div>
+                <div class="column1-2">2</div>
+                <div class="column1-3">fixed</div>
+            </div>
+        </div>
+
+        <div class="inner">
+            <h3>positionによる位置指定2 (sticky) </h3>
+            stickyは親要素の中において、画面の位置を固定できる     
+            <div class="row2">
+                <div class="column2">slide</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

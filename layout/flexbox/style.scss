@@ -1,0 +1,69 @@
+#container {
+    text-align: center;
+
+    .inner {
+        background-color: gainsboro;    
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #header, #footer{
+        height: 50px;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+
+    .row1 {
+        width:400px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center; //横方向の整列
+        // justify-content: space-between; //均等に
+        align-items: center; //縦方向の整列
+        .column1 {
+            margin: 0 10%;
+            width:100px;
+            height: 100px;
+            background-color:salmon;
+        }    
+    }
+
+    .row2 {
+        width:400px;
+        height: 200px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column; // rowだと横並び
+        justify-content: center; //横方向の整列
+        align-items: center; //縦方向の整列
+        background-color: lightpink;
+        .column2 {
+            margin: auto 10%;
+            width: 90px;
+            height: 90px;
+            background-color:salmon;
+        }    
+    }
+
+    .row3 {
+        width: 400px;
+        height: 100px;
+        margin: 20px auto;
+        display: flex;
+        background-color: lightpink;
+        .column3-1 {
+            flex-grow: 1; //別の子要素と均等に分割
+            background-color:salmon;
+        }    
+        .column3-2 {
+            flex-grow: 2;
+            background-color:orange;
+        }    
+        .column3-3 {
+            flex-basis: 30px;
+            background-color:burlywood;
+        }    
+    }
+}
+

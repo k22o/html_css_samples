@@ -1,0 +1,37 @@
+#container {
+    text-align: center;
+    width:80%;
+    margin: 0 auto;
+
+    #header, #footer {
+        height: 50px;
+        background-color: salmon;
+        margin: 0 auto;
+    }
+
+    #grid {
+        display: grid;
+        justify-content: center;
+        margin: 10px auto;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        div {
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        #item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #item3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #item4 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+    }
+}
