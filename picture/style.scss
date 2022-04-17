@@ -13,7 +13,7 @@
     #sample2 {
         height: 200px;
         background-image: url("image/line.png");
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;// repeat, repeat-x, repeat-y, no-repeat
         background-size: cover;//アスペクト比を保ったまま、トリミングしてくれる
         background-position: center;
     }     

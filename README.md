@@ -1,6 +1,6 @@
 # CSS テンプレート集
 
-ソースコードの内容は、以下のサイトを参考にしています。
+ソースコードの内容は、一部のサイトを参考にしています。
 - https://www.udemy.com/course/front-dev-tutorial/
 
 ## contents

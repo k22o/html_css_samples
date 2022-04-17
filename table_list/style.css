@@ -1,27 +1,33 @@
 h3 {
   background-color: darkblue;
   color: white;
+  padding: 0 10px;
 }
 
 #container {
   margin: 0 20%;
 }
 
-#container #list1 ol {
+#container .list {
+  margin: 50 0;
+  height: 800px;
+}
+
+#container .list #list1 ol {
   counter-reset: counter;
   list-style-type: none;
 }
 
-#container #list1 li::before {
+#container .list #list1 li::before {
   counter-increment: counter;
   content: counters(counter, ".") " ";
 }
 
-#container #list2 ul {
+#container .list #list2 ul {
   list-style: none;
 }
 
-#container #list2 li:before {
+#container .list #list2 li:before {
   content: '';
   width: 6px;
   height: 6px;
@@ -33,13 +39,49 @@ h3 {
   background-color: aqua;
 }
 
-#container #list3 #list3-ol {
+#container .list #list3 #list3-ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#container #list3 #list3-ol ol {
+#container .list #list3 #list3-ol ol {
   margin: 0 10px;
+}
+
+#container .list #list4 dt {
+  float: left;
+  clear: left;
+  margin-right: 0.5em;
+  width: 120px;
+}
+
+#container .list #list4 dd {
+  float: left;
+  margin-left: 1em;
+}
+
+#container .table {
+  margin: 50 0;
+}
+
+#container .table #table1 table {
+  width: 200px;
+  border: 2px solid black;
+  border-collapse: collapse;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#container .table #table1 td, #container .table #table1 th {
+  border: 1px solid black;
+}
+
+#container .table #table1 thead {
+  background-color: #8c8ce2;
+}
+
+#container .table #table1 tbody th {
+  background-color: #aeaee1;
 }
 /*# sourceMappingURL=style.css.map */

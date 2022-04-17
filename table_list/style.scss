@@ -1,43 +1,85 @@
 h3 {
     background-color: darkblue;
     color: white;
+    padding: 0 10px;
 }
 
 #container {
     margin: 0 20%;
 
-    #list1 {
-        ol {
-            counter-reset: counter;
-            list-style-type: none;
-          }
-          li::before {
-            counter-increment: counter;
-            content: counters(counter, '.') ' ';
-          }
+    .list {
+        margin: 50 0;
+        height: 800px;
+
+        #list1 {
+            ol {
+                counter-reset: counter;
+                list-style-type: none;
+            }
+            li::before {
+                counter-increment: counter;
+                content: counters(counter, '.') ' ';
+            }
+        }
+
+        #list2 {
+            ul {
+                list-style: none;
+            }
+            li:before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                position: relative;
+                left: -15px;
+                top: -3px;
+                display: inline-block;
+                background-color: aqua;
+            }
+        }
+        #list3 {
+            #list3-ol {
+                display: flex;
+                ol {
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        #list4 {
+            dt {
+                float: left ;
+                clear: left ; //後続の左寄せを無くす
+                margin-right: 0.5em ;
+                width: 120px ;
+            }
+            dd {
+                float: left ;
+                margin-left: 1em ;
+            }        
+        }
     }
 
-    #list2 {
-        ul {
-            list-style: none;
-        }
-        li:before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            border-radius: 100%;
-            position: relative;
-            left: -15px;
-            top: -3px;
-            display: inline-block;
-             background-color: aqua;
-        }
-    }
-    #list3 {
-        #list3-ol {
-            display: flex;
-            ol {
-                margin: 0 10px;
+    .table {
+        margin: 50 0;
+
+        #table1 {
+            table {
+                width: 200px;
+                border: 2px solid black;
+                border-collapse: collapse; //collapse:線が1つに、separate:2つに
+                vertical-align: middle; //縦方向の文字の位置
+                text-align: center;
+            }
+            td, th{
+                border: 1px solid black;
+            }
+            thead{
+                background-color: rgb(140, 140, 226);
+            }
+            tbody th{
+                background-color: rgb(174, 174, 225);
             }
         }
     }
