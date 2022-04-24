@@ -1,0 +1,40 @@
+h3 {
+    background-color: salmon;
+    color: white;
+}
+
+#container {
+    text-align: center;
+}
+
+.sample1 {
+    max-width: 80%;
+    
+    .acd-label {
+        display: block;
+        margin: 0 0 4px 0;
+        padding : 15px;
+        line-height: 1;
+        color :#fff;
+        background : black;
+        cursor :pointer;
+    }
+    
+    .acd-input {
+        display: none;
+    }
+    
+    .acd-content {
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    
+    #acd1 {
+        #acd1-input:checked ~ .acd-content {
+            height: 40px;
+            opacity: 1;
+        }
+    }
+}
