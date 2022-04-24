@@ -38,6 +38,10 @@ h3 {
           text-decoration: dashed line-through #0bd;
 }
 
+#container .deco #deco4 {
+  text-shadow: 2px 2px 3px black;
+}
+
 #container .emp #emp1 {
   -webkit-text-emphasis: dot red;
   text-emphasis: dot red;
