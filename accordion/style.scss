@@ -5,14 +5,14 @@ h3 {
 
 #container {
     text-align: center;
+    width: 80%;
 }
 
 .sample1 {
-    max-width: 80%;
     
     .acd-label {
         display: block;
-        margin: 0 0 4px 0;
+        margin: 10px;
         padding : 15px;
         line-height: 1;
         color :#fff;
@@ -31,10 +31,50 @@ h3 {
         transition: all 0.5s;
     }
     
-    #acd1 {
-        #acd1-input:checked ~ .acd-content {
+    .acd1 {
+        .acd-input:checked ~ .acd-content {
             height: 40px;
             opacity: 1;
         }
+    }
+}
+
+.sample2 {
+
+    ul {
+        list-style: none;
+    }
+
+    .acd-content {
+        height: 0;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .acd2{
+        padding: 15px;
+        color: #fff;
+        background: black;
+        position: relative;
+        margin: 10px;
+        cursor :pointer;
+    }
+
+    .acd2::before{
+        content: "＋";
+        position: absolute;
+        right: 20px;
+    }
+
+    .acd2.open {
+
+        + .acd-content{
+            opacity: 1;
+            height: 50px;
+        }
+
+        &::before{
+            content: "－";
+        }    
     }
 }

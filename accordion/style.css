@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h3 {
   background-color: salmon;
   color: white;
@@ -5,15 +6,12 @@ h3 {
 
 #container {
   text-align: center;
-}
-
-.sample1 {
-  max-width: 80%;
+  width: 80%;
 }
 
 .sample1 .acd-label {
   display: block;
-  margin: 0 0 4px 0;
+  margin: 10px;
   padding: 15px;
   line-height: 1;
   color: #fff;
@@ -32,8 +30,43 @@ h3 {
   transition: all 0.5s;
 }
 
-.sample1 #acd1 #acd1-input:checked ~ .acd-content {
+.sample1 .acd1 .acd-input:checked ~ .acd-content {
   height: 40px;
   opacity: 1;
+}
+
+.sample2 ul {
+  list-style: none;
+}
+
+.sample2 .acd-content {
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sample2 .acd2 {
+  padding: 15px;
+  color: #fff;
+  background: black;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sample2 .acd2::before {
+  content: "＋";
+  position: absolute;
+  right: 20px;
+}
+
+.sample2 .acd2.open + .acd-content {
+  opacity: 1;
+  height: 50px;
+}
+
+.sample2 .acd2.open::before {
+  content: "－";
 }
 /*# sourceMappingURL=style.css.map */
