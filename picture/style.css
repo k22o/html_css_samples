@@ -53,7 +53,40 @@
   filter: blur(3px);
 }
 
-#container #sample7 video, #container #sample7 audio {
+#container #sample7 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#container #sample7 ul li {
+  margin: 5px;
+}
+
+#container #sample7 ul a {
+  position: relative;
+  display: block;
+}
+
+#container #sample7 a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(158, 157, 157, 0.5);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+
+#container #sample7 ul:hover li:not(:hover) a::after {
+  opacity: 1;
+}
+
+#container #sample8 video, #container #sample8 audio {
   display: block;
   margin: 10px auto;
 }
