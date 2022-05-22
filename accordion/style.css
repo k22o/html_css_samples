@@ -35,38 +35,44 @@ h3 {
   opacity: 1;
 }
 
-.sample2 ul {
-  list-style: none;
-}
-
-.sample2 .acd-content {
-  height: 0;
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
 .sample2 .acd2 {
-  padding: 15px;
-  color: #fff;
-  background: black;
+  margin: auto;
+  width: 70%;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.sample2 .acd2 li {
+  margin: 10px 0;
+}
+
+.sample2 .acd2-content {
+  max-height: 0;
+  min-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+.sample2 .acd2-title {
+  padding: 5px 5px;
+  margin: 0;
+  border: 2px solid lightcoral;
   position: relative;
-  margin: 10px;
   cursor: pointer;
 }
 
-.sample2 .acd2::before {
+.sample2 .acd2-title::before {
   content: "＋";
   position: absolute;
-  right: 20px;
+  right: 10px;
 }
 
-.sample2 .acd2.open + .acd-content {
-  opacity: 1;
-  height: 50px;
+.sample2 .acd2-title.open + .acd-content {
+  max-height: 200px;
 }
 
-.sample2 .acd2.open::before {
+.sample2 .acd2-title.open::before {
   content: "－";
 }
 /*# sourceMappingURL=style.css.map */

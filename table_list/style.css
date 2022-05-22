@@ -8,26 +8,26 @@ h3 {
   margin: 0 20%;
 }
 
-#container .list {
+.list {
   margin: 50 0;
   height: 800px;
 }
 
-#container .list #list1 ol {
+.list #list1 ol {
   counter-reset: counter;
   list-style-type: none;
 }
 
-#container .list #list1 li::before {
+.list #list1 li::before {
   counter-increment: counter;
   content: counters(counter, ".") " ";
 }
 
-#container .list #list2 ul {
+.list #list2 ul {
   list-style: none;
 }
 
-#container .list #list2 li:before {
+.list #list2 li:before {
   content: '';
   width: 6px;
   height: 6px;
@@ -39,33 +39,42 @@ h3 {
   background-color: aqua;
 }
 
-#container .list #list3 #list3-ol {
+.list #list3 #list3-ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#container .list #list3 #list3-ol ol {
+.list #list3 #list3-ol ol {
   margin: 0 10px;
 }
 
-#container .list #list4 dt {
+.list #list4 #list4-ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list #list5 {
+  height: 200px;
+}
+
+.list #list5 dt {
   float: left;
   clear: left;
   margin-right: 0.5em;
   width: 120px;
 }
 
-#container .list #list4 dd {
+.list #list5 dd {
   float: left;
   margin-left: 1em;
 }
 
-#container .table {
+.table {
   margin: 50 0;
 }
 
-#container .table #table1 table {
+.table #table1 table {
   width: 200px;
   border: 2px solid black;
   border-collapse: collapse;
@@ -73,15 +82,15 @@ h3 {
   text-align: center;
 }
 
-#container .table #table1 td, #container .table #table1 th {
+.table #table1 td, .table #table1 th {
   border: 1px solid black;
 }
 
-#container .table #table1 thead {
+.table #table1 thead {
   background-color: #8c8ce2;
 }
 
-#container .table #table1 tbody th {
+.table #table1 tbody th {
   background-color: #aeaee1;
 }
 /*# sourceMappingURL=style.css.map */
