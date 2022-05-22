@@ -4,16 +4,19 @@
 - https://www.udemy.com/course/front-dev-tutorial/
 
 ## contents
+- accordion: アコーディオンメニュー
 - animation: keyframeを用いたanimationの作成
 - button: さまざまなバリエーションのボタン
+- hamburger: スマホメニュー (ハンバーガーメニュー)
+- input: inputタグ系
+- intersectionObserver: スクロールとintersection observer
 - layout: 要素の並べ方
-- menu: スマホメニュー (ハンバーガーメニュー)
+- link: リンクの貼り方
 - picture: 画像の表示方法
-- pseudo-element-and-selector: 疑似要素の使い方
-- responsive: レスポンシブなページの設計
-- scroll: スクロールとintersection observer
+- pseudo-elements-and-selector: 疑似要素と疑似セレクタ
+- strings: 文字の装飾
 - swipe: 画像をスワイプで表示
-
+- table_list: テーブルとリスト
 
 ## 実装について
 - scssを利用
@@ -35,6 +38,8 @@ scssでは、特に2,3番目について、この空白の有無を反映して�
 ### 便利なライブラリ
 - https://codebyzach.github.io/pace/ : ローダーを作れるJSライブラリ
 - https://swiperjs.com/ : スライダーを作れるJSライブラリ
+- https://caniuse.com/: ブラウザごとに使えるものをまとめてある
+- https://coco-factory.jp/ugokuweb/
 
 
 
