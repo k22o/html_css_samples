@@ -1,0 +1,212 @@
+$decorateColor: #142c5b;
+$h2height: 50px;
+
+h2{
+    width: 300px;
+    height: $h2height;
+    line-height: 50px;
+    padding: 0.5em;
+    margin: 70px;
+    color: #494949;
+}
+
+#heading1 {
+    position: relative;
+    border: 1px solid $decorateColor;
+    padding: 7px 0 7px 35px;
+
+    &:after {
+        position: absolute;
+        top: $h2height/2;
+        left: 10px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: $decorateColor;
+    }     
+}
+
+#heading2 {
+    position: relative;
+    background: $decorateColor;
+    color: #FFF;
+  
+  &:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid $decorateColor;
+    width: 0;
+    height: 0;
+  }
+}
+
+#heading3 {
+    background: #FCFCFC;
+    border-left: solid 5px $decorateColor;
+    border-bottom: solid 3px #d7d7d7;
+}
+
+#heading4 {
+    background: $decorateColor;
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;
+    color: #FFF;
+  
+    &:before {
+        content: '●';
+        color: #FFF;
+        margin-right: 8px;
+  }
+}
+
+#heading5 {
+    position: relative;
+    background-color: #ccc;
+
+    span {
+        display: block;
+        padding: .75em 1em;
+        border: 1px dashed #FFF;
+    }
+    &:before, &:after{
+       content: '';
+        position: absolute;
+        border-style: solid;
+        border-color: transparent;
+    }  
+    &:before {
+        top: 100%;
+        left: 0;
+        border-width: 0 15px 15px 0;
+        border-right-color: #ccc;
+    }
+    &:after {
+        top: -15px;
+        right: 0;
+        border-style: solid;
+        border-width: 0 15px 15px 0;
+        border-bottom-color: #ccc;
+    }
+}
+
+#heading6 {
+	position:relative;
+	border:1px solid $decorateColor;
+
+    &:after{
+        content: "litte-heading";
+        position: absolute;
+        top: -$h2height/2;
+        left: 10px;
+        background: #FFF;
+        font-size: 12px;
+        color: #142c5b;
+        padding: 0 10px;
+    }
+}
+
+#timeline {
+    .time-schedule {
+        min-width: 400px;
+        max-width: 400px;
+        list-style: none;
+        margin: 0 auto 0 6em;
+        padding-left: 20px;
+        border-left: 6px solid $decorateColor;
+        box-sizing: border-box;
+
+        li {
+            width: 100%;
+            margin: 0 0;
+            padding: 5px 0;
+            position: relative;
+        }
+    
+        span.time {
+            width: 5em;
+            display: inline-block;
+            margin-left: -8em;
+            padding: 0 0 5px;
+            margin-top: 15px;
+            vertical-align: top;
+            position: relative;
+            text-align: right;
+            box-sizing: border-box;
+        
+            &::after {
+                content: "";
+                position: absolute;
+                right: -35px;
+                top: 0;
+                background: $decorateColor;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+            }
+        }
+    }      
+}  
+
+
+$questionColor: #ff1481;
+$answerColor:  #0096e5;
+#chat {
+
+    width: 50%;
+    margin: 50px auto;
+
+    .faq_area {
+        margin: 0 auto ;
+      
+        div {
+            width: 100%;
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        dt, dd {
+            min-width:80px;
+            padding: 10px 15px;
+            color: #fff;
+            border-radius: 80px;
+            background: #0096e5;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      
+        dt {
+            margin-bottom: 20px;
+            background: $questionColor;      
+            &:before {
+                content: "";
+                border: 10px solid transparent;
+                border-right: 20px solid $questionColor;
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+      
+        dd {
+            margin-top: 20px;
+            background: $answerColor;
+            &:after {
+                content: "";
+                border: 10px solid transparent;
+                border-left: 20px solid $answerColor;
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        } 
+    }
+}

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+  }
+
 h3 {
     background-color: darkred;
     color: whitesmoke;
@@ -31,6 +38,12 @@ h3 {
         }
         #deco4 {
             text-shadow: 2px 2px 3px black;            
+        }
+        #deco5 {
+            background: linear-gradient(transparent 50%, #0bd 50%);
+        }
+        #font {
+            font-family: "Sawarabi Gothic";
         }
     }
 

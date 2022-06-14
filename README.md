@@ -8,6 +8,7 @@
 - animation: keyframeを用いたanimationの作成
 - button: さまざまなバリエーションのボタン
 - hamburger: スマホメニュー (ハンバーガーメニュー)
+- heading: 見出し
 - input: inputタグ系
 - intersectionObserver: スクロールとintersection observer
 - layout: 要素の並べ方
