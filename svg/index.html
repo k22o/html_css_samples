@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG</title>
+</head>
+<body>
+    <div id="container">
+        <div id="svg-size">
+            <h3>viewportとviewbox</h3>
+            <svg class="svg1" height="100" width="100" viewBox="0 0 100 100">
+                <rect x="25" y="25" width="50" height="50" fill="#AAAAAA" id="rect" />
+            </svg>            
+        </div>
+
+        <div id="svg-html">
+            <h3>htmlでのsvgの図形</h3>
+            <svg>
+                <text x="180" y="75">text</text>
+                <line x1="50" y1="50" x2="100" y2="100" stroke="#000000" id="line" />
+                <circle cx="200" cy="75" r="40" stroke="white" stroke-width="5" fill="yellow" fill-opacity="0.8"/>
+            </svg>  
+            <svg width="200px" height="100px" viewBox="0 0 200 100" >
+                <polyline points="0,25 50,75 100,25 150,75" stroke="black" stroke-width="5"/>
+            </svg>
+            <!-- polylineで指定した点を結ぶ線を描く -->
+            <svg width="200px" height="100px" viewBox="0 0 200 100" >
+                <polyline points="0,25 50,75 100,25 150,75" stroke="black" stroke-opacity="0.5" stroke-width="5" fill="transparent"/>
+            </svg>
+            <!-- polygonで指定した点を結ぶ図形を描く -->
+            <svg width="200px" height="100px" viewBox="0 0 200 100" >
+                <polygon points="0,25 50,75 100,25 150,75" stroke="purple" stroke-width="5" fill="yellow"/>
+            </svg>
+            <!-- pathで任意の線を書く -->
+            <svg width="200px" height="100px" viewBox="0 0 200 100" >
+                <path d="M25,25 h50 l25,25z" stroke="purple" stroke-width="5" fill="transparent"/>
+            </svg>
+        </div>
+        <div id="svg-structure">
+            <h3>タグと構造化</h3>
+            <svg>
+                <title>サンプル</title>
+                <desc>サンプル</desc>
+                <g stroke-width="3" fill="yellow" fill-opacity="0.5">
+                    <rect x="25" y="25" width="50" height="50" stroke="black"/>
+                    <a href="#">
+                        <circle cx="50" cy="50" r="25" stroke="black"/>
+                    </a>
+                </g>
+                <defs>
+                    <circle id="circleDef" cy="50" r="25" stroke="black" fill="none"/>
+                </defs>
+                <use href="#circleDef" x="125"/>
+                <use href="#circleDef" x="150"/>
+            </svg>
+        </div>
+    </div>
+
+    <div>
+
+
+    </div>
+
+    
+</body>
+</html>

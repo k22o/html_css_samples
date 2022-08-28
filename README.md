@@ -1,5 +1,5 @@
 # CSS テンプレート集
-
+html5ベース。
 ソースコードの内容は、一部のサイトを参考にしています。
 - https://www.udemy.com/course/front-dev-tutorial/
 
@@ -7,6 +7,7 @@
 - accordion: アコーディオンメニュー
 - animation: keyframeを用いたanimationの作成
 - button: さまざまなバリエーションのボタン
+- dom: jsによるDOM操作
 - hamburger: スマホメニュー (ハンバーガーメニュー)
 - heading: 見出し
 - input: inputタグ系
@@ -16,6 +17,8 @@
 - picture: 画像の表示方法
 - pseudo-elements-and-selector: 疑似要素と疑似セレクタ
 - strings: 文字の装飾
+- structure: 構造化タグ
+- svg: svgの操作
 - swipe: 画像をスワイプで表示
 - table_list: テーブルとリスト
 

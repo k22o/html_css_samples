@@ -1,0 +1,54 @@
+#container {
+    text-align: center;
+    width: 80%;
+}
+
+header {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#left {
+    
+    float: left;
+    width: 15%;
+    margin: 10px;
+
+    nav {
+        background-color: aquamarine;
+        
+        ul, li {
+            list-style: none;
+            padding-left: 0px;
+        }
+    }
+    
+}
+
+#right {
+
+    float: left;
+    margin: 10px;
+    width: 70%;
+
+    main {
+        border: 1px solid black;
+    }
+
+    section {
+        background-color: lightsalmon;
+        width: 100%;
+    }
+    
+    aside {
+        border: 1px solid black;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    clear: both;
+}
