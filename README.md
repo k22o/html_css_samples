@@ -39,11 +39,12 @@ scssでは、特に2,3番目について、この空白の有無を反映して�
 - &p2
 
 ## 参考
-### 便利なライブラリ
+### 便利なライブラリなど
 - https://codebyzach.github.io/pace/ : ローダーを作れるJSライブラリ
 - https://swiperjs.com/ : スライダーを作れるJSライブラリ
 - https://caniuse.com/: ブラウザごとに使えるものをまとめてある
 - https://coco-factory.jp/ugokuweb/
+- https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=ja
 
 
 
