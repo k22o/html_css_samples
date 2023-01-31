@@ -14,7 +14,7 @@ h3 {
   text-align: center;
 }
 
-#container .allSelector {
+.allSelector {
   -webkit-user-select: all;
      -moz-user-select: all;
       -ms-user-select: all;
@@ -23,62 +23,62 @@ h3 {
   margin: 10px, 20%;
 }
 
-#container .column p {
+.column p {
   -webkit-columns: 3;
           columns: 3;
   -webkit-column-rule: solid 2px #222;
           column-rule: solid 2px #222;
 }
 
-#container .deco #deco1 {
+.deco #deco1 {
   -webkit-text-decoration: underline  #0bd;
           text-decoration: underline  #0bd;
 }
 
-#container .deco #deco2 {
+.deco #deco2 {
   -webkit-text-decoration: underline wavy #0bd;
           text-decoration: underline wavy #0bd;
 }
 
-#container .deco #deco3 {
+.deco #deco3 {
   -webkit-text-decoration: dashed line-through #0bd;
           text-decoration: dashed line-through #0bd;
 }
 
-#container .deco #deco4 {
+.deco #deco4 {
   text-shadow: 2px 2px 3px black;
 }
 
-#container .deco #deco5 {
+.deco #deco5 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #0bd));
   background: linear-gradient(transparent 50%, #0bd 50%);
 }
 
-#container .deco #font {
+.deco #font {
   font-family: "Sawarabi Gothic";
 }
 
-#container .emp #emp1 {
+.emp #emp1 {
   -webkit-text-emphasis: dot red;
   text-emphasis: dot red;
 }
 
-#container .emp #emp2 {
+.emp #emp2 {
   -webkit-text-emphasis: circle red;
   text-emphasis: circle red;
 }
 
-#container .emp #emp3 {
+.emp #emp3 {
   -webkit-text-emphasis: sesame red;
   text-emphasis: sesame red;
 }
 
-#container #sample4 details {
+#sample4 details {
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-#container #sample4 details[open] {
+#sample4 details[open] {
   background: lightsalmon;
 }
 /*# sourceMappingURL=style.css.map */
