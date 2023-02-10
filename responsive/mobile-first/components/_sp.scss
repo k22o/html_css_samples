@@ -1,0 +1,15 @@
+.cardList__item {
+    + .cardList__item {
+        margin-top: 30px;
+    }
+}
+
+.cardList2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.cardList2__item {
+    margin-top: 20px;
+}

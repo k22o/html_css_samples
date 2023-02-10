@@ -1,0 +1,11 @@
+@import "components/sp";
+
+@media screen and (min-width: 768px) {
+    @import "components/pc";
+}
+
+h1 {
+    text-align: center;
+    color:black;
+    background-color: gray;
+}

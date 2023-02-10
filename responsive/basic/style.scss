@@ -1,0 +1,12 @@
+.simple1Column {
+    background-color: #eee;
+    max-width: 1000px;
+    margin: auto; // 中央ぞろえに
+}
+
+.column2Group {
+    display: flex;
+    .col {
+        width: 45%;
+    }
+}
