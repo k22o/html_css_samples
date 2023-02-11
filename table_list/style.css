@@ -71,7 +71,7 @@ h3 {
 }
 
 .table {
-  margin: 50 0;
+  margin: 50px 0;
 }
 
 .table #table1 table {
@@ -92,5 +92,66 @@ h3 {
 
 .table #table1 tbody th {
   background-color: #aeaee1;
+}
+
+.table #table2 {
+  max-width: 500px;
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.table #table2 table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table #table2 td, .table #table2 th {
+  border: 1px solid black;
+}
+
+.table #table2 thead {
+  background-color: #8c8ce2;
+}
+
+.table #table3 {
+  max-width: 500px;
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.table #table3 table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table #table3 td, .table #table3 th {
+  border: 1px solid black;
+}
+
+.table #table3 thead th {
+  background-color: #8c8ce2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table #table3 thead th:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.table #table3 tbody th {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: lightgray;
 }
 /*# sourceMappingURL=style.css.map */

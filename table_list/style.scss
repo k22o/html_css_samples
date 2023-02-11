@@ -73,7 +73,7 @@ h3 {
 }
 
 .table {
-    margin: 50 0;
+    margin: 50px 0;
 
     #table1 {
         table {
@@ -83,14 +83,74 @@ h3 {
             vertical-align: middle; //縦方向の文字の位置
             text-align: center;
         }
+        td, th {
+            border: 1px solid black;
+        }
+        thead {
+            background-color: rgb(140, 140, 226);
+        }
+        tbody th {
+            background-color: rgb(174, 174, 225);
+        }
+    }
+
+    #table2 {
+        max-width: 500px;
+        max-height: 200px;
+        overflow-x: auto;
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse; //collapse:線が1つに、separate:2つに
+            vertical-align: middle; //縦方向の文字の位置
+            text-align: center;
+        }
         td, th{
             border: 1px solid black;
         }
-        thead{
+        thead {
             background-color: rgb(140, 140, 226);
         }
-        tbody th{
-            background-color: rgb(174, 174, 225);
+    }
+
+    #table3 {
+        max-width: 500px;
+        max-height: 200px;
+        overflow-x: auto;
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse; //collapse:線が1つに、separate:2つに
+            vertical-align: middle; //縦方向の文字の位置
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        thead {
+            th {
+                background-color: rgb(140, 140, 226);
+                position: sticky;
+                top: 0;
+                z-index: 1;
+
+                &:first-child{
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+            }
+        }
+
+        tbody {
+            th {
+                position: sticky;
+                left: 0;
+                background-color: lightgray;
+            }
         }
     }
 }
