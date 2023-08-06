@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-#main-container {
+#main {
   position: relative;
   background-color: teal;
   height: 100vh;
@@ -30,7 +30,7 @@ body {
 }
 
 .header .title {
-  color: gray;
+  font-size: 50px;
   margin: 0 0 0 30px;
 }
 

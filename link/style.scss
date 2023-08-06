@@ -13,19 +13,14 @@ a {
     cursor: pointer;// マウスカーソルをポインタに
 }
 
-#container {
+header {
+    height: 100vh
+}
 
-    header {
-        height: 100vh
-    }
+#sectionA {
+    height: 100vh
+}
 
-    #sectionA {
-        height: 100vh
-    }
-
-    #sectionB {
-        height: 100vh
-    }
-
-
+#sectionB {
+    height: 100vh
 }

@@ -2,19 +2,19 @@
   text-align: center;
 }
 
-#container .inner {
+.inner {
   background-color: gainsboro;
   width: 60%;
   margin: 0 auto;
 }
 
-#container #header, #container #footer {
+#header, #footer {
   height: 50px;
   margin: 0 auto;
   background-color: aquamarine;
 }
 
-#container .row1 {
+.row1 {
   width: 400px;
   height: 100px;
   margin: 0 auto;
@@ -29,14 +29,14 @@
           align-items: center;
 }
 
-#container .row1 .column1 {
+.row1 .column1 {
   margin: 0 10%;
   width: 100px;
   height: 100px;
   background-color: salmon;
 }
 
-#container .row2 {
+.row2 {
   width: 400px;
   height: 200px;
   margin: 20px auto;
@@ -56,14 +56,14 @@
   background-color: lightpink;
 }
 
-#container .row2 .column2 {
+.row2 .column2 {
   margin: auto 10%;
   width: 90px;
   height: 90px;
   background-color: salmon;
 }
 
-#container .row3 {
+.row3 {
   width: 400px;
   height: 100px;
   margin: 20px auto;
@@ -73,21 +73,21 @@
   background-color: lightpink;
 }
 
-#container .row3 .column3-1 {
+.row3 .column3-1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   background-color: salmon;
 }
 
-#container .row3 .column3-2 {
+.row3 .column3-2 {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
   background-color: orange;
 }
 
-#container .row3 .column3-3 {
+.row3 .column3-3 {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   background-color: burlywood;

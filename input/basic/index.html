@@ -9,10 +9,9 @@
     <title>input</title>
 </head>
 <body>
-
     <div class="container">
 
-      <div class="form">
+      <section class="form">
         <h3>formの使い方</h3>
         <form action="#" method="post">
           <div class="inputBox">
@@ -26,9 +25,9 @@
           <input type="submit" value="送信する">            
           <input type="reset" value="リセットする">            
         </form>
-      </div>
+      </section>
 
-      <div class="input-tag">
+      <section class="input-tag">
         <h3>inputタグの使い分け</h3>            
         <table>
           <tr>
@@ -88,13 +87,14 @@
         <input type="hidden" name="hidden" value="1">
         <p>input-buttonの機能は、jsで実装する</p>
         <input type="button" value="button">
-      </div>
+      </section>
 
-      <div class="input-file">
+      <section class="input-file">
         <h3>ファイル</h3>
         <label><input type="file" name="file" id="fileUpload">ファイルをアップロード</label>  
         <p id="fileName">ファイルが選択されていません</p>
-      </div>
+      </section>
+
       <script type="text/javascript">
         const fileUpload = document.getElementById("fileUpload");
         fileUpload.addEventListener('change', () => {
@@ -105,7 +105,7 @@
 
       </script>
     
-      <div class="radio-button">
+      <section class="radio-button">
         <h3>ラジオボタン・チェックボックス</h3>  
         <p>valueで設定したものが、nameというデータ名の値として送信される</p>  
         <div class="inputField">
@@ -116,9 +116,9 @@
           <label for="radio2"><input id="radio2" type="radio" name="gender" value="female"><span>女性</span></label>
           <label for="radio3"><input id="radio3" type="radio" name="gender" value="female"><span>その他</span></label>
         </div>
-      </div>
+      </section>
 
-      <div class="selectMenu">
+      <section class="selectMenu">
         <h3>select menuの使い方</h3>
         <div class="selectWrapper">
           <select>
@@ -135,14 +135,14 @@
               </optgroup>
             </select>
           </div>
-      </div>
+        </section>
 
-      <div class="input-extend">
+      <section class="input-extend">
         <h3>フォーカスで伸びるtextbox</h3>
         <input type="text">
-      </div>
+      </seection>
 
-      <div class="input-selection">
+      <section class="input-selection">
         <h3>選択肢が出てくる</h3>
         <input type="text" name="select" list="selectList">
         <datalist id="selectList">
@@ -150,8 +150,7 @@
           <option>b</option>
           <option>c</option>
         </datalist>
-
-      </div>
+      </section>
 
     </div>
 </body>

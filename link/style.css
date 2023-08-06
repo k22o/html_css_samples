@@ -14,15 +14,15 @@ a {
   cursor: pointer;
 }
 
-#container header {
+header {
   height: 100vh;
 }
 
-#container #sectionA {
+#sectionA {
   height: 100vh;
 }
 
-#container #sectionB {
+#sectionB {
   height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

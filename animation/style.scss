@@ -2,165 +2,140 @@
 
 #container {
     text-align: center;
+}
 
-    .sampleBox {
-        margin: 10px auto;
-        width: 80%;
-        border: 2px dotted black;
-        background-color: whitesmoke;
+.sampleBox {
+    margin: 10px auto;
+    width: 80%;
+    border: 2px dotted black;
+    background-color: whitesmoke;
+}
+
+#sample1 {
+    div {   
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: black;
+        border-radius: 50%;
+        animation: bounce-delay 1.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+
+        @for $i from 1 to 3 {
+            &:nth-child(#{$i}) { //selectorの中にいれるときや文字列中にいれる場合は #{} をつける
+                animation-delay: -1.0s / $i;
+            }
+        }    
     }
+}
 
-    #sample1 {
-        // .dot {
-        div {   
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            background-color: black;
-            border-radius: 50%;
-            animation: bounce-delay 1.5s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite;
+#sample2 {
+    .rect2 {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        @include animation($name: rect-scaled);
+    }
+}
 
-            @for $i from 1 to 3 {
-                &:nth-child(#{$i}) { //selectorの中にいれるときや文字列中にいれる場合は #{} をつける
-                    animation-delay: -1.0s / $i;
-                }
-            }    
+#sample3 {
+    perspective: 120px; //X-Y平面上だと動きが分からないのでずらす
+    .rect3 {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        @include animation($name: rotation-3d);
+    }
+}
+
+#sample4 {
+    padding:20px;
+    div {
+        display: inline-block;
+        width:10px;
+        height:60px;
+        background-color: black;
+        @include animation(
+            $name: scale-vartical,
+            $duration: 1.5s
+            );
+
+        @for $i from 1 to 5 {
+            &:nth-child(#{$i}){
+                animation-delay: -1.2s + $i * 0.15s;
+            }
         }
-        // .dot {
-        //         display: inline-block;
-        //         width: 24px;
-        //         height: 24px;
-        //         background-color: black;
-        //         border-radius: 50%;
-        //         animation: sk-bounce-delay 1.5s;
-        //         animation-timing-function: ease;
-        //         animation-iteration-count: infinite;
+    }
+}
+
+#sample5 {
+    position: relative;
+    text-align: center;
+    background-color: lightsalmon;
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
     
-        //         @for $i from 1 to 3 {
-        //             &:nth-child(#{$i}) { //selectorの中にいれるときや文字列中にいれる場合は #{} をつける
-        //                 animation-delay: -1.0s / $i;
-        //             }
-        //         }    
-        //     }
-    
-        // // #dot1 {
-        //     animation-delay: -1.0s
-        // }        
-        // #dot2 {
-        //     animation-delay: -0.5s;
-        // }
+    .animateStrings {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        color: white;
 
-    }
+        &.isShow {
+            opacity: 1;
 
-    #sample2 {
-        .rect2 {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: black;
-            @include animation($name: rect-scaled);
-        }
-    }
-
-    #sample3 {
-        perspective: 120px; //X-Y平面上だと動きが分からないのでずらす
-        .rect3 {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: black;
-            @include animation($name: rotation-3d);
-        }
-    }
-
-    #sample4 {
-        padding:20px;
-        div {
-            display: inline-block;
-            width:10px;
-            height:60px;
-            background-color: black;
-            @include animation(
-                $name: scale-vartical,
-                $duration: 1.5s
+            & .char {
+                display: inline-block;
+                
+                @include animation (
+                    $name: string-fade-in,
+                    $duration: 0.5s,
+                    $iteration-count: 1,
+                    $fill-mode: both                
                 );
 
-            @for $i from 1 to 5 {
-                &:nth-child(#{$i}){
-                    animation-delay: -1.2s + $i * 0.15s;
+                @for $i from 1 to 20 {
+                    &:nth-child(#{$i}) {
+                        animation-delay: $i*0.05s;
+                    }
                 }
             }
         }
     }
+}
+#sample6 {
+    button {
+        display: block;
+        margin: 5px auto;
+    }
 
-    #sample5 {
-        position: relative;
-        text-align: center;
+    .box {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
         background-color: lightsalmon;
-        width: 60%;
-        height: 100px;
-        margin: 0 auto;
-        
-        .animateStrings {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            color: white;
-
-            &.isShow {
-                opacity: 1;
-
-                & .char {
-                    display: inline-block;
-                    
-                    @include animation (
-                        $name: string-fade-in,
-                        $duration: 0.5s,
-                        $iteration-count: 1,
-                        $fill-mode: both                
-                    );
-
-                    @for $i from 1 to 20 {
-                        &:nth-child(#{$i}) {
-                            animation-delay: $i*0.05s;
-                        }
-                    }
-                }
-            }
-        }
     }
-    #sample6 {
-        button {
-            display: block;
-            margin: 5px auto;
-        }
 
-        .box {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin: 10px;
-            background-color: lightsalmon;
+    .appear {
+        & .box {
+            transition: all 1s;
+            opacity: 0;
+            transform: translateY(10px);
         }
-
-        .appear {
+        &.isShow {
             & .box {
-                transition: all 1s;
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            &.isShow {
-                & .box {
-                    opacity: 1;
-                    transform: none;
+                opacity: 1;
+                transform: none;
 
-                    &:nth-child(2) {
-                        transition-delay: 0.5s;
-                    }
+                &:nth-child(2) {
+                    transition-delay: 0.5s;
                 }
             }
         }

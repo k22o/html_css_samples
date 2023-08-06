@@ -11,55 +11,53 @@ h3{
     text-align: center;
     width: 800px;
     margin: 10px auto;
-
-    #sample1 {
-        #header {
-            background-color: salmon;
-            height:100px;
-            line-height: 100px;
-        }
-        #side {
-            background-color: lightblue;
-            height:300px;
-            line-height: 300px;
-            width: 100px;
-            float: left;
-        }
-        #main1 {
-            background-color: greenyellow;
-            height:300px;
-            line-height: 300px;
-            width: 300px;
-            float: left;
-            margin-left: 50px;
-        }
-        #main2 {
-            height:300px;
-            line-height: 300px;
-            width: 300px;
-            float: right;
-            border: black;
-            #main2-component1 {
-                height: 150px;
-                width: 100%;
-                line-height: 150px;
-                background-color: lightgreen;
-            }
-            #main2-component2 {
-                height: 150px;
-                width: 100%;
-                line-height: 150px;
-                background-color: lightcyan;
-            }
-        }
-
-        #footer {
-            background-color: lightgoldenrodyellow;
-            height:100px;
-            line-height: 100px;
-            clear: both;
-        }
-    }
-    
 }
 
+.sample1 {
+    .header {
+        background-color: salmon;
+        height:100px;
+        line-height: 100px;
+    }
+    .side {
+        background-color: lightblue;
+        height:300px;
+        line-height: 300px;
+        width: 100px;
+        float: left;
+    }
+    .main1 {
+        background-color: greenyellow;
+        height:300px;
+        line-height: 300px;
+        width: 300px;
+        float: left;
+        margin-left: 50px;
+    }
+    .main2 {
+        height:300px;
+        line-height: 300px;
+        width: 300px;
+        float: right;
+        border: black;
+        .main2-component1 {
+            height: 150px;
+            width: 100%;
+            line-height: 150px;
+            background-color: lightgreen;
+        }
+        .main2-component2 {
+            height: 150px;
+            width: 100%;
+            line-height: 150px;
+            background-color: lightcyan;
+        }
+    }
+
+    .footer {
+        background-color: lightgoldenrodyellow;
+        height:100px;
+        line-height: 100px;
+        clear: both;
+    }
+}

@@ -1,7 +1,8 @@
 $decorateColor: #142c5b;
 $h2height: 50px;
 
-h2{
+.heading {
+    font-size: 20px;
     width: 300px;
     height: $h2height;
     line-height: 50px;

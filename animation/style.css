@@ -2,14 +2,14 @@
   text-align: center;
 }
 
-#container .sampleBox {
+.sampleBox {
   margin: 10px auto;
   width: 80%;
   border: 2px dotted black;
   background-color: whitesmoke;
 }
 
-#container #sample1 div {
+#sample1 div {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -23,17 +23,17 @@
           animation-iteration-count: infinite;
 }
 
-#container #sample1 div:nth-child(1) {
+#sample1 div:nth-child(1) {
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
 }
 
-#container #sample1 div:nth-child(2) {
+#sample1 div:nth-child(2) {
   -webkit-animation-delay: -0.5s;
           animation-delay: -0.5s;
 }
 
-#container #sample2 .rect2 {
+#sample2 .rect2 {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -54,12 +54,12 @@
           animation-fill-mode: forwards;
 }
 
-#container #sample3 {
+#sample3 {
   -webkit-perspective: 120px;
           perspective: 120px;
 }
 
-#container #sample3 .rect3 {
+#sample3 .rect3 {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -80,11 +80,11 @@
           animation-fill-mode: forwards;
 }
 
-#container #sample4 {
+#sample4 {
   padding: 20px;
 }
 
-#container #sample4 div {
+#sample4 div {
   display: inline-block;
   width: 10px;
   height: 60px;
@@ -105,27 +105,27 @@
           animation-fill-mode: forwards;
 }
 
-#container #sample4 div:nth-child(1) {
+#sample4 div:nth-child(1) {
   -webkit-animation-delay: -1.05s;
           animation-delay: -1.05s;
 }
 
-#container #sample4 div:nth-child(2) {
+#sample4 div:nth-child(2) {
   -webkit-animation-delay: -0.9s;
           animation-delay: -0.9s;
 }
 
-#container #sample4 div:nth-child(3) {
+#sample4 div:nth-child(3) {
   -webkit-animation-delay: -0.75s;
           animation-delay: -0.75s;
 }
 
-#container #sample4 div:nth-child(4) {
+#sample4 div:nth-child(4) {
   -webkit-animation-delay: -0.6s;
           animation-delay: -0.6s;
 }
 
-#container #sample5 {
+#sample5 {
   position: relative;
   text-align: center;
   background-color: lightsalmon;
@@ -134,7 +134,7 @@
   margin: 0 auto;
 }
 
-#container #sample5 .animateStrings {
+#sample5 .animateStrings {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -144,11 +144,11 @@
   color: white;
 }
 
-#container #sample5 .animateStrings.isShow {
+#sample5 .animateStrings.isShow {
   opacity: 1;
 }
 
-#container #sample5 .animateStrings.isShow .char {
+#sample5 .animateStrings.isShow .char {
   display: inline-block;
   -webkit-animation-name: string-fade-in;
           animation-name: string-fade-in;
@@ -166,107 +166,107 @@
           animation-fill-mode: both;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(1) {
+#sample5 .animateStrings.isShow .char:nth-child(1) {
   -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(2) {
+#sample5 .animateStrings.isShow .char:nth-child(2) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(3) {
+#sample5 .animateStrings.isShow .char:nth-child(3) {
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(4) {
+#sample5 .animateStrings.isShow .char:nth-child(4) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(5) {
+#sample5 .animateStrings.isShow .char:nth-child(5) {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(6) {
+#sample5 .animateStrings.isShow .char:nth-child(6) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(7) {
+#sample5 .animateStrings.isShow .char:nth-child(7) {
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(8) {
+#sample5 .animateStrings.isShow .char:nth-child(8) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(9) {
+#sample5 .animateStrings.isShow .char:nth-child(9) {
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(10) {
+#sample5 .animateStrings.isShow .char:nth-child(10) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(11) {
+#sample5 .animateStrings.isShow .char:nth-child(11) {
   -webkit-animation-delay: 0.55s;
           animation-delay: 0.55s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(12) {
+#sample5 .animateStrings.isShow .char:nth-child(12) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(13) {
+#sample5 .animateStrings.isShow .char:nth-child(13) {
   -webkit-animation-delay: 0.65s;
           animation-delay: 0.65s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(14) {
+#sample5 .animateStrings.isShow .char:nth-child(14) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(15) {
+#sample5 .animateStrings.isShow .char:nth-child(15) {
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(16) {
+#sample5 .animateStrings.isShow .char:nth-child(16) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(17) {
+#sample5 .animateStrings.isShow .char:nth-child(17) {
   -webkit-animation-delay: 0.85s;
           animation-delay: 0.85s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(18) {
+#sample5 .animateStrings.isShow .char:nth-child(18) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
 
-#container #sample5 .animateStrings.isShow .char:nth-child(19) {
+#sample5 .animateStrings.isShow .char:nth-child(19) {
   -webkit-animation-delay: 0.95s;
           animation-delay: 0.95s;
 }
 
-#container #sample6 button {
+#sample6 button {
   display: block;
   margin: 5px auto;
 }
 
-#container #sample6 .box {
+#sample6 .box {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -274,7 +274,7 @@
   background-color: lightsalmon;
 }
 
-#container #sample6 .appear .box {
+#sample6 .appear .box {
   -webkit-transition: all 1s;
   transition: all 1s;
   opacity: 0;
@@ -282,13 +282,13 @@
           transform: translateY(10px);
 }
 
-#container #sample6 .appear.isShow .box {
+#sample6 .appear.isShow .box {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
 }
 
-#container #sample6 .appear.isShow .box:nth-child(2) {
+#sample6 .appear.isShow .box:nth-child(2) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }

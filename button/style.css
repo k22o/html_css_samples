@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1 {
+h2 {
   background-color: gray;
   color: white;
 }
@@ -12,7 +12,7 @@ h3 {
   text-align: center;
 }
 
-#container .btn {
+.btn {
   position: relative;
   color: black;
   width: 120px;
@@ -26,34 +26,34 @@ h3 {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   /*
-        疑似要素 (::before, ::after) を使う
-        */
+    疑似要素 (::before, ::after) を使う
+    */
 }
 
-#container .btn.colorChange {
+.btn.colorChange {
   border-radius: 6px;
 }
 
-#container .btn.colorChange:hover {
+.btn.colorChange:hover {
   color: white;
   background-color: black;
   letter-spacing: 2px;
 }
 
-#container .btn.shadow:hover {
+.btn.shadow:hover {
   -webkit-transform: translate(-2.5px, -2.5px);
           transform: translate(-2.5px, -2.5px);
   -webkit-box-shadow: 5px 5px 0 0 gray;
           box-shadow: 5px 5px 0 0 gray;
 }
 
-#container .btn.slide {
+.btn.slide {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-#container .btn.slide span {
+.btn.slide span {
   display: inline-block;
   background-color: black;
   width: 100%;
@@ -70,22 +70,22 @@ h3 {
   z-index: -1;
 }
 
-#container .btn.slide:hover {
+.btn.slide:hover {
   color: white;
 }
 
-#container .btn.slide:hover span {
+.btn.slide:hover span {
   -webkit-transform: none;
           transform: none;
 }
 
-#container .btn.slide2 {
+.btn.slide2 {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-#container .btn.slide2::before {
+.btn.slide2::before {
   content: '';
   display: inline-block;
   background-color: black;
@@ -103,16 +103,16 @@ h3 {
   z-index: -1;
 }
 
-#container .btn.slide2:hover {
+.btn.slide2:hover {
   color: white;
 }
 
-#container .btn.slide2:hover::before {
+.btn.slide2:hover::before {
   -webkit-transform: none;
           transform: none;
 }
 
-#container .btn.cover3d {
+.btn.cover3d {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -120,13 +120,13 @@ h3 {
           perspective: 300px;
 }
 
-#container .btn.cover3d span {
+.btn.cover3d span {
   display: inline-block;
   -webkit-transform: translateZ(30px);
           transform: translateZ(30px);
 }
 
-#container .btn.cover3d::before {
+.btn.cover3d::before {
   content: '';
   display: inline-block;
   background-color: black;
@@ -144,17 +144,17 @@ h3 {
   opacity: 0;
 }
 
-#container .btn.cover3d:hover {
+.btn.cover3d:hover {
   color: white;
 }
 
-#container .btn.cover3d:hover::before {
+.btn.cover3d:hover::before {
   -webkit-transform: none;
           transform: none;
   opacity: 1;
 }
 
-#container .btn.cubic span {
+.btn.cubic span {
   position: absolute;
   top: 0;
   left: 0;
@@ -168,26 +168,26 @@ h3 {
           transform-origin: center center -25px;
 }
 
-#container .btn.cubic .firstState {
+.btn.cubic .firstState {
   background-color: white;
   color: black;
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
 
-#container .btn.cubic .secondState {
+.btn.cubic .secondState {
   background-color: black;
   color: white;
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg);
 }
 
-#container .btn.cubic:hover .firstState {
+.btn.cubic:hover .firstState {
   -webkit-transform: rotateX(-90deg);
           transform: rotateX(-90deg);
 }
 
-#container .btn.cubic:hover .secondState {
+.btn.cubic:hover .secondState {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }

@@ -12,13 +12,13 @@ h3 {
   margin: 10px auto;
 }
 
-#container #sample1 #header {
+.sample1 .header {
   background-color: salmon;
   height: 100px;
   line-height: 100px;
 }
 
-#container #sample1 #side {
+.sample1 .side {
   background-color: lightblue;
   height: 300px;
   line-height: 300px;
@@ -26,7 +26,7 @@ h3 {
   float: left;
 }
 
-#container #sample1 #main1 {
+.sample1 .main1 {
   background-color: greenyellow;
   height: 300px;
   line-height: 300px;
@@ -35,7 +35,7 @@ h3 {
   margin-left: 50px;
 }
 
-#container #sample1 #main2 {
+.sample1 .main2 {
   height: 300px;
   line-height: 300px;
   width: 300px;
@@ -43,21 +43,21 @@ h3 {
   border: black;
 }
 
-#container #sample1 #main2 #main2-component1 {
+.sample1 .main2 .main2-component1 {
   height: 150px;
   width: 100%;
   line-height: 150px;
   background-color: lightgreen;
 }
 
-#container #sample1 #main2 #main2-component2 {
+.sample1 .main2 .main2-component2 {
   height: 150px;
   width: 100%;
   line-height: 150px;
   background-color: lightcyan;
 }
 
-#container #sample1 #footer {
+.sample1 .footer {
   background-color: lightgoldenrodyellow;
   height: 100px;
   line-height: 100px;
