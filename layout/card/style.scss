@@ -1,4 +1,4 @@
-h3{
+h3 {
     background-color: darkgray;
     color: white;
     width: 80%;
@@ -10,7 +10,7 @@ ul, ol {
   list-style: none;
 }
 
-#background-thumbneil {
+.backgroundThumbnail {
 
     .card {
         display: block;
@@ -77,7 +77,7 @@ ul, ol {
 
 }
 
-#img-thumbneil {
+.imageThumbnail {
 
     display: block;
 	border: 1px solid #e7e7e7;
@@ -157,9 +157,9 @@ ul, ol {
     }
 }
 
-#media {
+.media {
 
-    .media {
+    .mediaCard {
         display: flex;  
         align-items: center;
         padding: 20px 0;
