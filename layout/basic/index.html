@@ -8,13 +8,13 @@
     <title>layout-basic</title>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
     
         <section>
             <h2>固定レイアウト</h2>
-            <section id="sample1">
+            <section class="sample1">
                 <h3>固定レイアウト</h3>
-                <p>pxの絶対値で幅を指定する。画面サイズに左右されやすい。</p>
+                <p>pxの絶対値で幅を指定する。画面サイズに左右されやすい。基本的に使用しない</p>
                 <div class="left">px</div>
                 <div class="right">px</div>
             </section>
@@ -22,13 +22,13 @@
 
         <section>
             <h2>可変レイアウト</h2>
-            <section id="sample2">
+            <section class="sample2">
                 <h3>リキッドレイアウト</h3>
                 <p>%で幅を指定する。極端に大きい/小さい画面だと見た目が変</p>
                 <div class="left">%</div>
                 <div class="right">%</div>
             </section>
-            <section id="sample3">
+            <section class="sample3">
                 <h3>フレキシブルレイアウト</h3>
                 <p>pxと%で幅を指定する。min/max-widthで%側のサイズ範囲を指定</p>
                 <div class="left">px</div>
@@ -38,7 +38,7 @@
 
         <section>
         <h2>カラムレイアウト</h2>
-            <section id="sample4">
+            <section class="sample4">
                 <h3>1カラム</h3>
                 <p>横に要素を並べない</p>
                 <div class="head"></div>
@@ -46,11 +46,11 @@
                 <div class="foot"></div>
             </section>
         
-            <section id="sample5">
+            <section class="sample5">
                 <h3>マルチカラム</h3>
-                <p>要素を並べる。floatやflexを使う</p>
+                <p>要素を並べる。flexを使う。floatは古い方法なので使わない。</p>
                 <div class="head"></div>
-                <div id="inner">
+                <div class="inner">
                     <div class="content"></div>
                     <div class="content"></div>
                     <div class="content"></div>
