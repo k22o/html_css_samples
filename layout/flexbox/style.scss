@@ -15,7 +15,7 @@
 }
 
 .row1 {
-    width:400px;
+    max-width:400px;
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -31,9 +31,8 @@
 }
 
 .row2 {
-    width:400px;
-    height: 200px;
-    margin: 20px auto;
+    max-width:400px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column; // rowだと横並び
     justify-content: center; //横方向の整列
@@ -41,16 +40,17 @@
     background-color: lightpink;
     .column2 {
         margin: auto 10%;
-        width: 90px;
-        height: 90px;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
         background-color:salmon;
     }    
 }
 
 .row3 {
-    width: 400px;
+    max-width: 400px;
     height: 100px;
-    margin: 20px auto;
+    margin: 0px auto;
     display: flex;
     background-color: lightpink;
     .column3-1 {

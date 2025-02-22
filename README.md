@@ -1,9 +1,12 @@
 # CSS テンプレート集
+
 html5ベース。
 ソースコードの内容は、一部のサイトを参考にしています。
+
 - https://www.udemy.com/course/front-dev-tutorial/
 
 ## contents
+
 - accordion: アコーディオンメニュー
 - animation: keyframeを用いたanimationの作成
 - button: さまざまなバリエーションのボタン
@@ -23,12 +26,14 @@ html5ベース。
 - table_list: テーブルとリスト
 
 ## 実装について
+
 - scssを利用
 - vscode (live server + live Saas Compiler)
 
 ## 補足
 
 ### cssの記法
+
 - `.p1, .p2`: p1またはp2のクラス
 - `.p1 .p2` : p1の子要素をであるp2 (scssだと、 `& p2`)
 - `.p1.p2`  : p1かつp2である要素 (scssだと、 `&p2`)
@@ -37,12 +42,11 @@ html5ベース。
 - `.p1 > .p2` : 直下セレクタ。p1の直下 (1つ下の階層) のp2
 
 ## 参考
+
 ### 便利なライブラリなど
+
 - https://codebyzach.github.io/pace/ : ローダーを作れるJSライブラリ
 - https://swiperjs.com/ : スライダーを作れるJSライブラリ
 - https://caniuse.com/: ブラウザごとに使えるものをまとめてある
 - https://coco-factory.jp/ugokuweb/
 - https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=ja
-
-
-
