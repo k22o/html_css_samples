@@ -1,4 +1,4 @@
-#container {
+.container {
   text-align: center;
   width: 80%;
 }
@@ -8,37 +8,32 @@ header {
   text-align: center;
 }
 
-#left {
+.left {
   float: left;
   width: 15%;
   margin: 10px;
 }
-
-#left nav {
+.left nav {
   background-color: aquamarine;
 }
-
-#left nav ul, #left nav li {
+.left nav ul, .left nav li {
   list-style: none;
   padding-left: 0px;
 }
 
-#right {
+.right {
   float: left;
   margin: 10px;
   width: 70%;
 }
-
-#right main {
+.right main {
   border: 1px solid black;
 }
-
-#right section {
+.right section {
   background-color: lightsalmon;
   width: 100%;
 }
-
-#right aside {
+.right aside {
   border: 1px solid black;
   width: 80%;
   margin: 10px auto;
@@ -48,5 +43,4 @@ footer {
   background-color: antiquewhite;
   text-align: center;
   clear: both;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ h3 {
     padding: 0 10px;
 }
 
-#container {
+.container {
     margin: 0 20%;
 }
 
@@ -12,7 +12,7 @@ h3 {
     margin: 50 0;
     height: 800px;
 
-    #list1 {
+    .list1 {
         ol {
             counter-reset: counter;
             list-style-type: none;
@@ -23,7 +23,7 @@ h3 {
         }
     }
 
-    #list2 {
+    .list2 {
         ul {
             list-style: none;
         }
@@ -40,8 +40,8 @@ h3 {
         }
     }
 
-    #list3 {
-        #list3-ol {
+    .list3 {
+        .list3-ol {
             display: flex;
             ol {
                 margin: 0 10px;
@@ -49,33 +49,39 @@ h3 {
         }
     }
 
-    #list4 {
-        #list4-ul {
+    .list4 {
+        .list4-ul {
             list-style: none;
             padding-left: 0px; //これがないと〇の分だけ40pxくらい右にずれる
         }
     }
 
-    #list5 {
+    .list5 {
         height: 200px;
-
+        display: flex;
+        flex-wrap: wrap;
+    
         dt {
-            float: left ;
-            clear: left ; //後続の左寄せを無くす
-            margin-right: 0.5em ;
-            width: 120px ;
+            width: 120px;
+            margin-right: 0.5em;
         }
+    
         dd {
-            float: left ;
-            margin-left: 1em ;
-        }        
+            margin-left: 1em;
+        }
+    
+        /* 親要素でdtとddを縦に並べる */
+        dt, dd {
+            display: inline-block;
+        }
     }
+    
 }
 
 .table {
     margin: 50px 0;
 
-    #table1 {
+    .table1 {
         table {
             width: 200px;
             border: 2px solid black;
@@ -94,7 +100,7 @@ h3 {
         }
     }
 
-    #table2 {
+    .table2 {
         max-width: 500px;
         max-height: 200px;
         overflow-x: auto;
@@ -113,7 +119,7 @@ h3 {
         }
     }
 
-    #table3 {
+    .table3 {
         max-width: 500px;
         max-height: 200px;
         overflow-x: auto;

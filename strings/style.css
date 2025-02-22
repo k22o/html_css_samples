@@ -1,84 +1,71 @@
 @font-face {
-  font-family: 'Kaushan Script';
+  font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
   src: url(https://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format("woff");
 }
-
 h3 {
   background-color: darkred;
   color: whitesmoke;
 }
 
-#container {
+.container {
   text-align: center;
 }
 
 .allSelector {
   -webkit-user-select: all;
      -moz-user-select: all;
-      -ms-user-select: all;
           user-select: all;
   background-color: greenyellow;
   margin: 10px, 20%;
 }
 
 .column p {
-  -webkit-columns: 3;
-          columns: 3;
-  -webkit-column-rule: solid 2px #222;
-          column-rule: solid 2px #222;
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-rule: solid 2px 0.222;
+       column-rule: solid 2px 0.222;
 }
 
-.deco #deco1 {
-  -webkit-text-decoration: underline  #0bd;
-          text-decoration: underline  #0bd;
+.deco .deco1 {
+  -webkit-text-decoration: underline 0bd;
+          text-decoration: underline 0bd;
 }
-
-.deco #deco2 {
-  -webkit-text-decoration: underline wavy #0bd;
-          text-decoration: underline wavy #0bd;
+.deco .deco2 {
+  -webkit-text-decoration: underline wavy 0bd;
+          text-decoration: underline wavy 0bd;
 }
-
-.deco #deco3 {
-  -webkit-text-decoration: dashed line-through #0bd;
-          text-decoration: dashed line-through #0bd;
+.deco .deco3 {
+  -webkit-text-decoration: dashed line-through 0bd;
+          text-decoration: dashed line-through 0bd;
 }
-
-.deco #deco4 {
+.deco .deco4 {
   text-shadow: 2px 2px 3px black;
 }
-
-.deco #deco5 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #0bd));
-  background: linear-gradient(transparent 50%, #0bd 50%);
+.deco .deco5 {
+  background: linear-gradient(transparent 50%, 0bd 50%);
 }
-
-.deco #font {
+.deco .font {
   font-family: "Sawarabi Gothic";
 }
 
-.emp #emp1 {
+.emp .emp1 {
   -webkit-text-emphasis: dot red;
-  text-emphasis: dot red;
+          text-emphasis: dot red;
 }
-
-.emp #emp2 {
+.emp .emp2 {
   -webkit-text-emphasis: circle red;
-  text-emphasis: circle red;
+          text-emphasis: circle red;
 }
-
-.emp #emp3 {
+.emp .emp3 {
   -webkit-text-emphasis: sesame red;
-  text-emphasis: sesame red;
+          text-emphasis: sesame red;
 }
 
-#sample4 details {
-  -webkit-transition: .5s;
-  transition: .5s;
+.sample4 details {
+  transition: 0.5s;
 }
-
-#sample4 details[open] {
+.sample4 details[open] {
   background: lightsalmon;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

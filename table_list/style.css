@@ -1,10 +1,11 @@
+@charset "UTF-8";
 h3 {
   background-color: darkblue;
   color: white;
   padding: 0 10px;
 }
 
-#container {
+.container {
   margin: 0 20%;
 }
 
@@ -12,23 +13,19 @@ h3 {
   margin: 50 0;
   height: 800px;
 }
-
-.list #list1 ol {
+.list .list1 ol {
   counter-reset: counter;
   list-style-type: none;
 }
-
-.list #list1 li::before {
+.list .list1 li::before {
   counter-increment: counter;
   content: counters(counter, ".") " ";
 }
-
-.list #list2 ul {
+.list .list2 ul {
   list-style: none;
 }
-
-.list #list2 li:before {
-  content: '';
+.list .list2 li:before {
+  content: "";
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -38,120 +35,97 @@ h3 {
   display: inline-block;
   background-color: aqua;
 }
-
-.list #list3 #list3-ol {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.list .list3 .list3-ol {
   display: flex;
 }
-
-.list #list3 #list3-ol ol {
+.list .list3 .list3-ol ol {
   margin: 0 10px;
 }
-
-.list #list4 #list4-ul {
+.list .list4 .list4-ul {
   list-style: none;
   padding-left: 0px;
 }
-
-.list #list5 {
+.list .list5 {
   height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  /* 親要素でdtとddを縦に並べる */
 }
-
-.list #list5 dt {
-  float: left;
-  clear: left;
-  margin-right: 0.5em;
+.list .list5 dt {
   width: 120px;
+  margin-right: 0.5em;
 }
-
-.list #list5 dd {
-  float: left;
+.list .list5 dd {
   margin-left: 1em;
+}
+.list .list5 dt, .list .list5 dd {
+  display: inline-block;
 }
 
 .table {
   margin: 50px 0;
 }
-
-.table #table1 table {
+.table .table1 table {
   width: 200px;
   border: 2px solid black;
   border-collapse: collapse;
   vertical-align: middle;
   text-align: center;
 }
-
-.table #table1 td, .table #table1 th {
+.table .table1 td, .table .table1 th {
   border: 1px solid black;
 }
-
-.table #table1 thead {
-  background-color: #8c8ce2;
+.table .table1 thead {
+  background-color: rgb(140, 140, 226);
 }
-
-.table #table1 tbody th {
-  background-color: #aeaee1;
+.table .table1 tbody th {
+  background-color: rgb(174, 174, 225);
 }
-
-.table #table2 {
+.table .table2 {
   max-width: 500px;
   max-height: 200px;
   overflow-x: auto;
 }
-
-.table #table2 table {
+.table .table2 table {
   border: 2px solid black;
   border-collapse: collapse;
   vertical-align: middle;
   text-align: center;
 }
-
-.table #table2 td, .table #table2 th {
+.table .table2 td, .table .table2 th {
   border: 1px solid black;
 }
-
-.table #table2 thead {
-  background-color: #8c8ce2;
+.table .table2 thead {
+  background-color: rgb(140, 140, 226);
 }
-
-.table #table3 {
+.table .table3 {
   max-width: 500px;
   max-height: 200px;
   overflow-x: auto;
 }
-
-.table #table3 table {
+.table .table3 table {
   border: 2px solid black;
   border-collapse: collapse;
   vertical-align: middle;
   text-align: center;
 }
-
-.table #table3 td, .table #table3 th {
+.table .table3 td, .table .table3 th {
   border: 1px solid black;
 }
-
-.table #table3 thead th {
-  background-color: #8c8ce2;
-  position: -webkit-sticky;
+.table .table3 thead th {
+  background-color: rgb(140, 140, 226);
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
-.table #table3 thead th:first-child {
-  position: -webkit-sticky;
+.table .table3 thead th:first-child {
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
 }
-
-.table #table3 tbody th {
-  position: -webkit-sticky;
+.table .table3 tbody th {
   position: sticky;
   left: 0;
   background-color: lightgray;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ h3 {
     color: whitesmoke;
 }
 
-#container {
+.container {
     text-align: center;
 }
 
@@ -23,47 +23,44 @@ h3 {
 .column {
     p {
         columns: 3;
-        column-rule: solid 2px #222;            
+        column-rule: solid 2px .222;            
     }
 }
 
 .deco {
-    #deco1 {
-        text-decoration: underline  #0bd;            
+    .deco1 {
+        text-decoration: underline  .0bd;            
     }
-    #deco2 {
-        text-decoration: underline wavy #0bd;            
+    .deco2 {
+        text-decoration: underline wavy .0bd;            
     }
-    #deco3 {
-        text-decoration: dashed line-through #0bd;            
+    .deco3 {
+        text-decoration: dashed line-through .0bd;            
     }
-    #deco4 {
+    .deco4 {
         text-shadow: 2px 2px 3px black;            
     }
-    #deco5 {
-        background: linear-gradient(transparent 50%, #0bd 50%);
+    .deco5 {
+        background: linear-gradient(transparent 50%, .0bd 50%);
     }
-    #font {
+    .font {
         font-family: "Sawarabi Gothic";
     }
 }
 
 .emp {
-    #emp1 {
-        -webkit-text-emphasis: dot red;
+    .emp1 {
         text-emphasis: dot red;
     }
-    #emp2 {
-        -webkit-text-emphasis: circle red;
+    .emp2 {
         text-emphasis: circle red;
     }
-    #emp3 {
-        -webkit-text-emphasis: sesame red;
+    .emp3 {
         text-emphasis: sesame red;
     }
 }
 
-#sample4 {
+.sample4 {
     details {
         transition: .5s;
     }
