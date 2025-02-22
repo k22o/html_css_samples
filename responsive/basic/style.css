@@ -5,12 +5,8 @@
 }
 
 .column2Group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .column2Group .col {
   width: 45%;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -18,18 +18,14 @@ h3 {
   background: black;
   cursor: pointer;
 }
-
 .sample1 .acd-input {
   display: none;
 }
-
 .sample1 .acd-content {
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .sample1 .acd1 .acd-input:checked ~ .acd-content {
   height: 40px;
   opacity: 1;
@@ -41,19 +37,15 @@ h3 {
   list-style: none;
   padding-left: 0px;
 }
-
 .sample2 .acd2 li {
   margin: 10px 0;
 }
-
 .sample2 .acd2-content {
   max-height: 0;
   min-height: 0;
   overflow-y: hidden;
-  -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
-
 .sample2 .acd2-title {
   padding: 5px 5px;
   margin: 0;
@@ -61,18 +53,14 @@ h3 {
   position: relative;
   cursor: pointer;
 }
-
 .sample2 .acd2-title::before {
   content: "＋";
   position: absolute;
   right: 10px;
 }
-
 .sample2 .acd2-title.open + .acd-content {
   max-height: 200px;
 }
-
 .sample2 .acd2-title.open::before {
   content: "－";
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

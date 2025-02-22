@@ -17,17 +17,14 @@ h3 {
   content: "hello ";
   color: orangered;
 }
-
 .pseudo.after::after {
   content: " world";
   color: orangered;
 }
-
 .pseudo.first-letter::first-letter {
   content: "";
   color: orangered;
 }
-
 .pseudo.first-line::first-line {
   content: "";
   color: orangered;
@@ -36,27 +33,21 @@ h3 {
 .pseudo-selector1 a {
   color: blue;
 }
-
 .pseudo-selector1 a:nth-child(3) {
   color: lightskyblue;
 }
-
 .pseudo-selector1 a:nth-child(2n) {
   color: purple;
 }
-
 .pseudo-selector1 a:visited {
   color: gray;
 }
-
 .pseudo-selector1 a:hover {
   color: red;
 }
-
 .pseudo-selector1 a:focus {
   color: green;
 }
-
 .pseudo-selector1 a:active {
   color: orange;
 }
@@ -64,16 +55,12 @@ h3 {
 .pseudo-selector2 span {
   color: blue;
 }
-
 .pseudo-selector2 span:first-child {
   color: red;
 }
-
 .pseudo-selector2 span:last-child {
   color: green;
 }
-
 .pseudo-selector2 span:not(.default) {
   color: orange;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

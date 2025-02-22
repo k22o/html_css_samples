@@ -14,12 +14,11 @@
   border: 1px solid #142c5b;
   padding: 7px 0 7px 35px;
 }
-
 #heading1:after {
   position: absolute;
   top: 25px;
   left: 10px;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #142c5b;
@@ -30,10 +29,9 @@
   background: #142c5b;
   color: #FFF;
 }
-
 #heading2:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 100%;
   left: 30px;
   border: 15px solid transparent;
@@ -54,9 +52,8 @@
   border-radius: 25px 0px 0px 25px;
   color: #FFF;
 }
-
 #heading4:before {
-  content: '●';
+  content: "●";
   color: #FFF;
   margin-right: 8px;
 }
@@ -65,27 +62,23 @@
   position: relative;
   background-color: #ccc;
 }
-
 #heading5 span {
   display: block;
-  padding: .75em 1em;
+  padding: 0.75em 1em;
   border: 1px dashed #FFF;
 }
-
 #heading5:before, #heading5:after {
-  content: '';
+  content: "";
   position: absolute;
   border-style: solid;
   border-color: transparent;
 }
-
 #heading5:before {
   top: 100%;
   left: 0;
   border-width: 0 15px 15px 0;
   border-right-color: #ccc;
 }
-
 #heading5:after {
   top: -15px;
   right: 0;
@@ -98,7 +91,6 @@
   position: relative;
   border: 1px solid #142c5b;
 }
-
 #heading6:after {
   content: "litte-heading";
   position: absolute;
@@ -117,17 +109,14 @@
   margin: 0 auto 0 6em;
   padding-left: 20px;
   border-left: 6px solid #142c5b;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 #timeline .time-schedule li {
   width: 100%;
   margin: 0 0;
   padding: 5px 0;
   position: relative;
 }
-
 #timeline .time-schedule span.time {
   width: 5em;
   display: inline-block;
@@ -137,10 +126,8 @@
   vertical-align: top;
   position: relative;
   text-align: right;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 #timeline .time-schedule span.time::after {
   content: "";
   position: absolute;
@@ -156,25 +143,16 @@
   width: 50%;
   margin: 50px auto;
 }
-
 #chat .faq_area {
   margin: 0 auto;
 }
-
 #chat .faq_area div {
   width: 100%;
   margin: 0 auto 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 #chat .faq_area dt, #chat .faq_area dd {
   min-width: 80px;
   padding: 10px 15px;
@@ -182,15 +160,12 @@
   border-radius: 80px;
   background: #0096e5;
   position: relative;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-
 #chat .faq_area dt {
   margin-bottom: 20px;
   background: #ff1481;
 }
-
 #chat .faq_area dt:before {
   content: "";
   border: 10px solid transparent;
@@ -198,15 +173,12 @@
   position: absolute;
   left: -20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 #chat .faq_area dd {
   margin-top: 20px;
   background: #0096e5;
 }
-
 #chat .faq_area dd:after {
   content: "";
   border: 10px solid transparent;
@@ -214,7 +186,5 @@
   position: absolute;
   right: -20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -17,7 +17,6 @@ ul {
   background-color: lightpink;
   position: relative;
 }
-
 .row1 .column1-1 {
   width: 50px;
   height: 50px;
@@ -27,7 +26,6 @@ ul {
   background-color: salmon;
   z-index: 2;
 }
-
 .row1 .column1-2 {
   width: 50px;
   height: 50px;
@@ -36,7 +34,6 @@ ul {
   left: 20px;
   background-color: red;
 }
-
 .row1 .column1-3 {
   width: 50px;
   height: 50px;
@@ -53,14 +50,11 @@ ul {
   background-color: lightpink;
   position: relative;
 }
-
 .row2 .column2 {
   width: 50px;
   height: 50px;
-  position: -webkit-sticky;
   position: sticky;
   top: 30px;
   left: 20px;
   background-color: salmon;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
