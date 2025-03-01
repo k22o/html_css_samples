@@ -3,7 +3,7 @@ class MobileMenu {
       this.DOM = {};
       this.DOM.btn = document.querySelector(".mobile-menu-btn");
       this.DOM.cover = document.querySelector(".mobile-menu-cover");
-      this.DOM.container = document.querySelector("#container");
+      this.DOM.container = document.querySelector(".container");
       this.eventType = this._getEventType();
       this._addEvent();
     }

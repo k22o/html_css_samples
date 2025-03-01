@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-#main {
+.main {
     position: relative;
     background-color: teal;
     height: 100vh;
@@ -47,7 +47,7 @@ body {
     }    
 }
 
-#contents {
+.contents {
     width:80%;
     text-align: left;
     margin: 0 auto;
@@ -104,7 +104,7 @@ body {
 }
 
 .menu-open {
-    #main-container {
+    .main-container {
         .mobile-menu-btn {
             transform: translateX(-$menuWidth);
 

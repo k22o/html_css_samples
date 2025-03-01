@@ -1,16 +1,16 @@
-#container {
+.container {
     text-align: center;
     width:80%;
     margin: 0 auto;
 }
 
-#header, #footer {
+.header, .footer {
     height: 50px;
     background-color: salmon;
     margin: 0 auto;
 }
 
-#grid {
+.grid {
     display: grid;
     justify-content: center;
     gap: 10px; //各gridの間隔調整
@@ -21,15 +21,15 @@
         margin: 5px;
     }
 
-    #item1 {
+    .item1 {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    #item3 {
+    .item3 {
         grid-row-start: 2;
         grid-row-end: 4;
     }
-    #item4 {
+    .item4 {
         grid-column-start: 2;
         grid-column-end: 4;
     }

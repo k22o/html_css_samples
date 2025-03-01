@@ -1,6 +1,6 @@
 @import "mixinParts";
 
-#container {
+.container {
     text-align: center;
 }
 
@@ -11,7 +11,7 @@
     background-color: whitesmoke;
 }
 
-#sample1 {
+.sample1 {
     div {   
         display: inline-block;
         width: 24px;
@@ -30,7 +30,7 @@
     }
 }
 
-#sample2 {
+.sample2 {
     .rect2 {
         display: inline-block;
         width: 50px;
@@ -40,7 +40,7 @@
     }
 }
 
-#sample3 {
+.sample3 {
     perspective: 120px; //X-Y平面上だと動きが分からないのでずらす
     .rect3 {
         display: inline-block;
@@ -51,7 +51,7 @@
     }
 }
 
-#sample4 {
+.sample4 {
     padding:20px;
     div {
         display: inline-block;
@@ -71,7 +71,7 @@
     }
 }
 
-#sample5 {
+.sample5 {
     position: relative;
     text-align: center;
     background-color: lightsalmon;
@@ -109,7 +109,8 @@
         }
     }
 }
-#sample6 {
+
+.sample6 {
     button {
         display: block;
         margin: 5px auto;

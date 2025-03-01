@@ -1,35 +1,35 @@
-#container {
+.container {
   text-align: center;
   width: 80%;
   margin: 0 auto;
 }
 
-#header, #footer {
+.header, .footer {
   height: 50px;
   background-color: salmon;
   margin: 0 auto;
 }
 
-#grid {
+.grid {
   display: grid;
   justify-content: center;
   gap: 10px;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
 }
-#grid div {
+.grid div {
   border: 1px solid black;
   margin: 5px;
 }
-#grid #item1 {
+.grid .item1 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-#grid #item3 {
+.grid .item3 {
   grid-row-start: 2;
   grid-row-end: 4;
 }
-#grid #item4 {
+.grid .item4 {
   grid-column-start: 2;
   grid-column-end: 4;
 }/*# sourceMappingURL=style.css.map */

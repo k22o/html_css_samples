@@ -11,7 +11,7 @@ $h2height: 50px;
     color: #494949;
 }
 
-#heading1 {
+.heading1 {
     position: relative;
     border: 1px solid $decorateColor;
     padding: 7px 0 7px 35px;
@@ -27,7 +27,7 @@ $h2height: 50px;
     }     
 }
 
-#heading2 {
+.heading2 {
     position: relative;
     background: $decorateColor;
     color: #FFF;
@@ -44,13 +44,13 @@ $h2height: 50px;
   }
 }
 
-#heading3 {
+.heading3 {
     background: #FCFCFC;
     border-left: solid 5px $decorateColor;
     border-bottom: solid 3px #d7d7d7;
 }
 
-#heading4 {
+.heading4 {
     background: $decorateColor;
     vertical-align: middle;
     border-radius: 25px 0px 0px 25px;
@@ -63,7 +63,7 @@ $h2height: 50px;
   }
 }
 
-#heading5 {
+.heading5 {
     position: relative;
     background-color: #ccc;
 
@@ -93,7 +93,7 @@ $h2height: 50px;
     }
 }
 
-#heading6 {
+.heading6 {
 	position:relative;
 	border:1px solid $decorateColor;
 
@@ -109,7 +109,7 @@ $h2height: 50px;
     }
 }
 
-#timeline {
+.timeline {
     .time-schedule {
         min-width: 400px;
         max-width: 400px;
@@ -154,7 +154,7 @@ $h2height: 50px;
 
 $questionColor: #ff1481;
 $answerColor:  #0096e5;
-#chat {
+.chat {
 
     width: 50%;
     margin: 50px auto;
@@ -190,7 +190,6 @@ $answerColor:  #0096e5;
                 position: absolute;
                 left: -20px;
                 top: 50%;
-                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
             }
         }
@@ -205,7 +204,6 @@ $answerColor:  #0096e5;
                 position: absolute;
                 right: -20px;
                 top: 50%;
-                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
             }
         } 
