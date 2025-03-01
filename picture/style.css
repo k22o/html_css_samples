@@ -7,11 +7,11 @@ div, section {
   margin: 10px auto;
 }
 
-#sample1 {
+.sample1 {
   height: 200px;
 }
 
-#sample2 {
+.sample2 {
   height: 200px;
   background-image: url("image/line.png");
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ div, section {
   background-position: center;
 }
 
-#sample4 {
+.sample4 {
   display: inline;
   margin: 10px;
   width: 100px;
@@ -28,13 +28,13 @@ div, section {
      object-fit: cover;
 }
 
-#sample5 {
+.sample5 {
   width: 300px;
   height: 300px;
   background: linear-gradient(#bcdbcf, #3bdf79);
   padding: 5px;
 }
-#sample5 #sample5-2 {
+.sample5 .sample5-2 {
   width: 80%;
   margin: 40% 10%;
   box-sizing: border-box;
@@ -44,22 +44,22 @@ div, section {
   background-image: linear-gradient(#fff, #fff), linear-gradient(#FFAFBD, #ED4264);
 }
 
-#sample6 img {
+.sample6 img {
   filter: blur(3px);
 }
 
-#sample7 ul {
+.sample7 ul {
   display: flex;
   list-style: none;
 }
-#sample7 ul li {
+.sample7 ul li {
   margin: 5px;
 }
-#sample7 ul a {
+.sample7 ul a {
   position: relative;
   display: block;
 }
-#sample7 a::after {
+.sample7 a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -70,11 +70,11 @@ div, section {
   transition: 0.3s;
   opacity: 0;
 }
-#sample7 ul:hover li:not(:hover) a::after {
+.sample7 ul:hover li:not(:hover) a::after {
   opacity: 1;
 }
 
-#sample8 video, #sample8 audio {
+.sample8 video, .sample8 audio {
   display: block;
   margin: 10px auto;
 }/*# sourceMappingURL=style.css.map */
