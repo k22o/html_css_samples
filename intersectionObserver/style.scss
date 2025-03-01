@@ -1,7 +1,4 @@
-@import "../animation/mixinParts";
-
-
-#container {
+.container {
     text-align: center;
     width: 80%;
     height: 3000px;
@@ -14,7 +11,7 @@
     height: 1000px;
 }
 
-#colorBlock {
+.colorBlock {
     margin: 0 auto;
     background-color: salmon;
     width: 50px;

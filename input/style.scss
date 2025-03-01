@@ -33,7 +33,7 @@ h3 {
     }
 }
 
-.input-tag {
+.inputTag {
     input {
         padding: 10px 20px 8px 20px;
         border-radius: 4px;
@@ -47,7 +47,7 @@ h3 {
     }
 }
 
-.input-file {
+.inputFile {
     // defaultを見えなくする
     input {
         opacity: 0;
@@ -64,7 +64,7 @@ h3 {
 
 }
 
-.radio-button {
+.radioButton {
     
     // defaultを見えなくする
     // display:noneにすると、tabキーでの移動などができないので、opacityに
@@ -187,7 +187,7 @@ h3 {
       
 }
 
-.input-extend {
+.inputExtend {
     input[type="text"] {
         width: 150px;
         transition: width .4s;

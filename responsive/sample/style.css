@@ -65,7 +65,6 @@ header {
     height: calc(100vh - 100px);
     background: #eee;
     overflow-y: auto; /*中身があふれたら縦スクロール*/
-    -webkit-overflow-scrolling: touch; /*iOSで慣性スクロール有効化*/
   }
   .gnav.open {
     display: block;
