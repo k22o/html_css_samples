@@ -24,11 +24,23 @@ html5ベース。
 - svg: svgの操作
 - swipe: 画像をスワイプで表示
 - table_list: テーブルとリスト
+- z-samples: ページのサンプル例
 
 ## 実装について
 
+### ソフトウェア
+
 - scssを利用
 - vscode (live server + live Saas Compiler)
+
+### コーディングルール
+
+※ これに従っていないものも多いが、z-samplesに追加するときは必ず従うこと
+
+- スタイルはclassで設定する
+- BEM記法 + lowerCamelCaseで 記載
+- 余白は、margin-topを基本とする
+- 画面サイズの変動を考慮した設計とする
 
 ## 補足
 

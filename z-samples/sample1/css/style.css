@@ -1,0 +1,136 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainSection {
+  max-width: 960px;
+  margin: 100px auto 0;
+  padding: 0 4%;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 120px;
+}
+.header__navigationList {
+  display: flex;
+  gap: 30px;
+}
+
+.mainVisual {
+  display: block;
+  margin-top: 10px;
+}
+.mainVisual__image {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid;
+}
+
+.about {
+  margin-top: 80px;
+}
+.about__profile {
+  display: flex;
+  margin-top: 70px;
+  text-align: left;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .about__profile {
+    flex-direction: column;
+  }
+}
+.about__image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 600px) {
+  .about__image {
+    margin: 0 auto;
+  }
+}
+.about__name {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.about__content {
+  display: block;
+  margin: 10px auto 0;
+  max-width: 400px;
+}
+
+.bicycle {
+  margin-top: 100px;
+}
+.bicycle__cardList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 60px auto 0;
+}
+@media screen and (max-width: 600px) {
+  .bicycle__cardList {
+    flex-direction: column;
+  }
+}
+.bicycle__card {
+  width: 32%;
+}
+@media screen and (max-width: 600px) {
+  .bicycle__card {
+    width: 100%;
+  }
+  .bicycle__card:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+.bicycle__image {
+  max-width: 100%;
+}
+.bicycle__pictureTitle {
+  display: block;
+  margin: 10px auto 0;
+}
+.bicycle__pictureContent {
+  display: block;
+  margin: 10px auto 0;
+}
+
+.footer {
+  margin-top: 110px;
+}/*# sourceMappingURL=style.css.map */

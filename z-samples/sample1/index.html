@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプルコード1</title>
+  <meta name="description" content="サンプルコード１">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header mainSection">
+    <div>
+      <img class="header__logo" src="img/logo.svg" alt="Profileページのロゴ">
+    </div>
+    <nav class="header__navigation">
+      <ul class="header__navigationList">
+        <li class="header__navigationItem"><a href="#about">About</a></li>
+        <li class="header__navigationItem"><a href="#bicycle">Bicycle</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="mainVisual">
+      <img class="mainVisual__image" src="img/mainvisual.jpg" alt="メインビジュアル、白いマウンテンバイクの画像">
+    </h1>
+    <section class="about mainSection" id="about">
+      <h2 class="about__title title">About</h2>
+      <div class="about__profile">
+        <img class="about__image" src="img/about.jpg" alt="TANAKA TAROの自己紹介写真">
+        <div>
+          <h3 class="about__name">TANAKA TARO</h3>
+          <p class="about__content">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>        
+      </div>
+    </section>
+    <section class="bicycle mainSection" id="bicycle">
+      <h2 class="bicycle__title title">Bicycle</h2>
+      <ul class="bicycle__cardList">
+        <li class="bicycle__card">
+          <img class="bicycle__image" src="img/bicycle1.jpg">
+          <h3 class="bicycle__pictureTitle">タイトル</h3>
+          <p class="bisycle_pictureContent">テキストテキストテキスト</p>
+        </li>
+        <li class="bicycle__card">
+          <img class="bicycle__image" src="img/bicycle2.jpg">
+          <h3 class="bicycle__pictureTitle">タイトル</h3>
+          <p class="bisycle_pictureContent">テキストテキストテキスト</p>
+        </li>
+        <li class="bicycle__card">
+          <img class="bicycle__image" src="img/bicycle3.jpg">
+          <h3 class="bicycle__pictureTitle">タイトル</h2>
+          <p class="bisycle_pictureContent">テキストテキストテキスト</p>
+          </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <small>&copy; 2020 Profile</small>
+  </footer>
+</body>
+</html>
