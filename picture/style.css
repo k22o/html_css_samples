@@ -1,4 +1,4 @@
-#container {
+.container {
   text-align: center;
   width: 80%;
 }
@@ -7,11 +7,14 @@ div, section {
   margin: 10px auto;
 }
 
-.sample1 {
-  height: 200px;
+h2 {
+  background-color: #FFAFBD;
 }
 
-.sample2 {
+.sample1-1 {
+  height: 200px;
+}
+.sample1-2 {
   height: 200px;
   background-image: url("image/line.png");
   background-repeat: no-repeat;
@@ -19,7 +22,13 @@ div, section {
   background-position: center;
 }
 
-.sample4 {
+.sample2-1 img {
+  max-width: 5%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sample2-2 {
   display: inline;
   margin: 10px;
   width: 100px;
@@ -28,13 +37,26 @@ div, section {
      object-fit: cover;
 }
 
-.sample5 {
+.sample3__inner {
+  display: flex;
+}
+div .sample3-1 :first-child {
+  width: 100px;
+  height: 100px;
+  background-color: #3bdf79;
+  border-radius: 50%;
+}
+.sample3-2 img {
+  filter: blur(3px);
+}
+
+.sample4-1 {
   width: 300px;
   height: 300px;
   background: linear-gradient(#bcdbcf, #3bdf79);
   padding: 5px;
 }
-.sample5 .sample5-2 {
+.sample4-1 div {
   width: 80%;
   margin: 40% 10%;
   box-sizing: border-box;
@@ -43,23 +65,18 @@ div, section {
   background-origin: padding-box, border-box;
   background-image: linear-gradient(#fff, #fff), linear-gradient(#FFAFBD, #ED4264);
 }
-
-.sample6 img {
-  filter: blur(3px);
-}
-
-.sample7 ul {
+.sample4-2 {
   display: flex;
   list-style: none;
 }
-.sample7 ul li {
+.sample4-2 li {
   margin: 5px;
 }
-.sample7 ul a {
+.sample4-2 a {
   position: relative;
   display: block;
 }
-.sample7 a::after {
+.sample4 a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -70,11 +87,11 @@ div, section {
   transition: 0.3s;
   opacity: 0;
 }
-.sample7 ul:hover li:not(:hover) a::after {
+.sample4 ul:hover li:not(:hover) a::after {
   opacity: 1;
 }
 
-.sample8 video, .sample8 audio {
+.sample5 video, .sample5 audio {
   display: block;
   margin: 10px auto;
 }/*# sourceMappingURL=style.css.map */

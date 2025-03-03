@@ -9,54 +9,78 @@
 </head>
 <body>
     <div class="container">
-        <section>
-            <h3>画像の表示方法1:imgタグ</h3>
-            <div class="sample1">
-                <img src="image/one.png" alt="one">
-                <img src="image/two.png" alt="two">
-                <img src="image/three.png" alt="three">
+        <section class="sample1">
+            <h2>画像の表示方法</h2>
+            <div>
+                <h3>画像の表示方法1:imgタグ</h3>
+                <div class="sample1-1">
+                    <img src="image/one.png" alt="one">
+                </div>            
+            </div>
+            <div>
+                <h3>画像の表示方法2:背景設定</h3>
+                <div class="sample1-2">
+                </div>                
+            </div>
+            <div>
+                <h3>画像の表示方法3:pictureタグ</h3>
+                <div class="sample1-3">
+                    <picture>
+                        <source media="(min-width:960px)" srcset="image/one.png" />
+                        <source media="(min-width:720px)" srcset="image/two.png" />
+                        <img src="image/three.png" alt="sample3" />
+                    </picture>
+                </div>                    
             </div>        
         </section>
-        <section>
-            <h3>画像の表示方法2:背景設定</h3>
-            <div class="sample2">
-            </div>                
-        </section>
-        <section>
-            <h3>画像の表示方法3:pictureタグ</h3>
-            <div class="sample3">
-                <picture>
-                    <source media="(min-width:960px)" srcset="image/one.png" />
-                    <source media="(min-width:720px)" srcset="image/two.png" />
-                    <img src="image/three.png" alt="sample3" />
-                </picture>
-            </div>        
-        </section>
-        <section>
-            <h3>画像のサイズの自動設定 (小さいものに合わせてトリミング) </h3>
-            <div class="sample4">
-                <img src="image/one.png" alt="one">
-                <img src="image/two.png" alt="two">
-                <img src="image/three.png" alt="three">
+
+        <section class="sample2">
+            <h2>画像のサイズの自動設定</h2>
+            <div>
+                <h3>height固定, width可変 </h3>
+                <div class="sample2-1">
+                    <img src="image/one.png" alt="one">
+                </div>
             </div>
-        </section>
-        <section>
-            <h3>背景や枠のグラデーション</h3>
-            <div class="sample5" class="row">
-                <div class="sample5-2" class="row">あいうえお</div>
-            </div>
-        </section>
-        <section>
-            <h3>画像のぼかし</h3>
-            <div class="sample6">
-                <img src="image/one.png" alt="one">                
+            <div>
+                <h3>小さいものに合わせてトリミング</h3>
+                <div class="sample2-2">
+                    <img src="image/one.png" alt="one">
+                    <img src="image/two.png" alt="two">
+                    <img src="image/three.png" alt="three">
+                </div>
             </div>
         </section>
 
-        <section>
-            <h3>hover以外を暗くする</h3>
-            <div class="sample7">
-                <ul>
+        <section class="sample3">
+            <h2>画像加工テクニック</h2>
+            <div class="sample3__inner">
+                <div>
+                    <h3>画像を丸くする</h3>
+                    <div class="sample3-1">
+                        <div></div>
+                    </div>    
+                </div>
+                <div>
+                    <h3>画像のぼかし</h3>
+                    <div class="sample3-2">
+                        <img src="image/one.png" alt="one">                
+                    </div>    
+                </div>
+            </div>                
+        </section>
+
+        <section class="sample4">
+            <h2>背景や枠の加工</h2>
+            <div>
+                <h3>グラデーション</h3>
+                <div class="sample4-1">
+                    <div>あいうえお</div>
+                </div>
+            </div>
+            <div>
+                <h3>hover以外を暗くする</h3>
+                <ul class="sample4-2">
                     <li><a href=""><img src="image/one.png" alt="one"></a></li>
                     <li><a href=""><img src="image/two.png" alt="two"></a></li>
                     <li><a href=""><img src="image/three.png" alt="three"></a></li>
@@ -64,16 +88,15 @@
             </div>
         </section>
 
-        <section>
-            <h3>動画や音声</h3>
-            <div class="sample8">
+        <section class="sample5">
+            <h2>動画や音声</h2>
+            <div>
                 <video src="sample.mp4" type="video/mp4" controls>サポートしていないブラウザです</video>
                 <!-- 自動でミュートかつループ再生
                 <video src="sample.mp4" loop autoplay mute　playsinline></video> -->
                 <audio src="sample.mp4" controls>サポートしていないブラウザです</audio>
             </div>
         </section>
-
 
     </div>
 </body>

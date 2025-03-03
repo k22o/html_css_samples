@@ -68,3 +68,11 @@ h3 {
         background: lightsalmon;
     }        
 }
+
+.sample6 {
+    p {
+        display: inline-block;
+        width: fit-content; //要素の幅を文字サイズにあわせる
+        border-bottom: 1px solid black;
+    }
+}

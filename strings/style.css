@@ -68,4 +68,11 @@ h3 {
 }
 .sample4 details[open] {
   background: lightsalmon;
+}
+
+.sample6 p {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
