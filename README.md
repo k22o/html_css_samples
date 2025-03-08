@@ -41,6 +41,8 @@ html5ベース。
 - BEM記法 + lowerCamelCaseで 記載
 - 余白は、margin-topを基本とする
 - 画面サイズの変動を考慮した設計とする
+- font-sizeは、remで記述する
+- font-weightは、bold:700とする
 
 ## 補足
 
