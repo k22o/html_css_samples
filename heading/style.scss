@@ -2,7 +2,7 @@ $decorateColor: #142c5b;
 $h2height: 50px;
 
 .heading {
-    font-size: 20px;
+    font-size: 1.5rem;
     width: 300px;
     height: $h2height;
     line-height: 50px;
@@ -103,7 +103,7 @@ $h2height: 50px;
         top: -$h2height/2;
         left: 10px;
         background: #FFF;
-        font-size: 12px;
+        font-size: 0.875rem;
         color: #142c5b;
         padding: 0 10px;
     }

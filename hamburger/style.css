@@ -19,7 +19,6 @@ body {
   align-items: center;
 }
 .header .title {
-  font-size: 50px;
   margin: 0 0 0 30px;
 }
 .header .mobile-menu-btn {
@@ -122,5 +121,5 @@ body {
 
 .menu-item-title {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

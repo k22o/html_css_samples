@@ -143,30 +143,30 @@ ul, ol {
   text-decoration: none;
   transition: color 0.3s;
 }
-.media .media__thumb {
+.media .mediaCard:hover {
+  color: red;
+}
+.media .mediaCard:hover .card__thumb {
+  opacity: 0.7;
+}
+.media__thumb {
   position: relative;
   transition: 0.3s;
   width: 30%;
   margin-right: 20px;
 }
-.media .media__body {
-  font-size: 14px;
-}
-.media .media__catch {
-  font-weight: bold;
-}
-.media .media__txt {
-  margin-top: 1em;
-  font-size: 0.8em;
-}
-.media .media:hover {
-  color: red;
-}
-.media .media:hover .card__thumb {
-  opacity: 0.7;
+.media__body {
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px), print {
-  .media .media__body {
-    font-size: 16px;
+  .media__body {
+    font-size: 1rem;
   }
+}
+.media__catch {
+  font-weight: bold;
+}
+.media__txt {
+  margin-top: 1em;
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */

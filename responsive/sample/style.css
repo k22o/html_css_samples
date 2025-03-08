@@ -101,7 +101,7 @@ header {
   .gnav__link {
     display: block;
     padding: 1em;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .gnav__link.current::after {
     content: "";
@@ -160,7 +160,7 @@ dd {
 }
 .mainVisual .mainVisual__text {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 2;
   text-align: center;
@@ -181,7 +181,7 @@ dd {
     display: flex;
     justify-content: center;
     padding: 0 8%;
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .mainVisual__img {
     flex-shrink: 0;
@@ -204,7 +204,7 @@ dd {
 }
 .serviceList .serviceList__data dt {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .serviceList .serviceList__data dd {
   margin-top: 10px;
