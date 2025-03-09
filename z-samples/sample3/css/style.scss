@@ -1,0 +1,218 @@
+$break-point-sp: 600px;
+$border-point: 1px;
+$color-black: #24292E;
+$color-gray: #C8C8C8;
+$color-white: #FFF;
+$section-margin-base: 130px;
+$section-margin-base-sp: 70px;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: $color-black;
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+ul {
+    padding-left:0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contents {
+    max-width: 960px;
+    padding: 0 4%;   
+}
+
+.header {
+    display: flex;
+    max-width: 960px;
+    height:270px;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $break-point-sp) {
+        margin: 20px auto 10px;
+        flex-flow: column;
+        gap: 10px;
+        height: auto;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 0.9rem;
+    }
+    &__item {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__instagram {
+        display:block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/icon-instagram.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+}
+
+.about {
+    margin-top: 80px;
+    &__name {
+        margin-top: 65px;
+    }
+    div {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.works {
+    margin-top: $section-margin-base;
+    @media screen and (max-width: $break-point-sp) {
+        margin-top: $section-margin-base-sp;
+    }       
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 23px;
+        @media screen and (max-width: $break-point-sp) {
+            grid-template-columns: repeat(1, 1fr);
+        }   
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.news {
+    margin-top: calc($section-margin-base + 20px);
+    @media screen and (max-width: $break-point-sp) {
+        margin-top: calc($section-margin-base-sp + 20px);
+    }       
+    &__table {
+        margin-top: 65px;
+        border-collapse: collapse;
+        width: 100%;
+        tr {
+            border-top: $border-point solid $color-gray;
+            border-bottom: $border-point solid $color-gray;        
+        }
+        td {
+            padding: 15px;
+            &:first-child {
+                width: 120px;
+            }
+            @media screen and (max-width: $break-point-sp) {
+                width: 100%;
+                display: block;
+                &:first-child {
+                    padding-bottom: 0;
+                } 
+                &:last-child {
+                    padding-top: 0;
+                }    
+            }          
+        }
+    }
+}
+
+.contact {
+    margin-top: $section-margin-base;
+    @media screen and (max-width: $break-point-sp) {
+        margin-top: $section-margin-base-sp;
+    }       
+ 
+    &__input {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 55px;
+        @media screen and (max-width: $break-point-sp) {
+            margin-top: 30px;
+            flex-direction: column;
+        }   
+
+        dt, dd {
+            margin-top:10px;
+            @media screen and (max-width: $break-point-sp) {
+                width:100%;
+            }       
+        }
+        dt {
+            width: 20%;
+        }
+        dd {
+            margin-left: 0;
+            width: 80%;
+            @media screen and (max-width: $break-point-sp) {
+                width:100%;
+                margin-top: 0px;
+            }       
+            input {
+                width: 100%;
+                height: 2rem;
+            }
+            textarea {
+                width: 100%;
+                height: 6rem;
+            }
+        }
+    }
+    &__submit {
+        display: block;
+        margin: 30px auto 0;
+        padding: 15px 0;
+        width: 200px;
+        background-color: $color-black;
+        color: $color-white;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }    
+}
+
+.footer {
+    margin-top: $section-margin-base;
+    @media screen and (max-width: $break-point-sp) {
+        margin-top: $section-margin-base-sp;
+    }       
+    background-color: $color-black;
+    text-align: center;
+    &__copyright {
+        display: block;
+        padding: 10px 0;
+        font-size: 0.5rem;
+        color: $color-white;
+    }
+}

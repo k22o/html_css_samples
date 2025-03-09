@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプルコード3</title>
+  <meta name="description" content="サンプルコード3">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header contents">
+    <h1><a href="#"><img src="./img/logo.svg" alt="My Work"></a></h1>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#about">About</a></li>
+        <li class="header__item"><a href="#works">Works</a></li>
+        <li class="header__item"><a href="news">News</a></li>
+        <li class="header__item"><a href="#contact">Contact</a></li>
+        <li class="header__item"><a href="#" target="_black" class="header__instagram"></a></li>
+      </ul>
+    </nav>      
+  </header>
+
+  <main>
+    <div class="banner">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+        <img src="img/mainvisual-pc.jpg" alt="">
+      </picture>
+    </div>
+
+    <section class="about contents" id="about">
+      <h2>About</h2>
+      <div class="about__name">
+        <p>Xxxxx Ashley</p>
+      </div>
+      <div class="about__personalInfo">
+        <ul>
+          <li>2th Floor xxxxx</li>
+          <li>tel: 000-0000-0000</li>
+          <li>url: example.com</li>
+          <li>mail: xxx@example.com</li>
+        </ul>
+      </div>        
+      <div class="about__profile">
+        <p>profile</p>
+      </div>
+    </section>
+
+    <section class="works contents" id="works">
+      <h2>Works</h2>
+      <ul class="works__list">
+        <li><img src="./img/works1.jpg" alt="作品1"></li>
+        <li><img src="./img/works2.jpg" alt="作品2"></li>
+        <li><img src="./img/works3.jpg" alt="作品3"></li>
+        <li><img src="./img/works4.jpg" alt="作品4"></li>
+        <li><img src="./img/works5.jpg" alt="作品5"></li>
+      </ul>
+    </section>
+
+    <section class="news contents" id="news">
+      <h2>News</h2>
+      <table class="news__table">
+        <tr>
+          <td>2023.xx.xx</td>
+          <td>xxxxxxxxxxxxxx</td>
+        </tr>
+        <tr>
+          <td>2022.xx.xx</td>
+          <td>xxxxxxxxxxxxxx</td>
+        </tr>
+        <tr>
+          <td>2020.xx.xx</td>
+          <td>xxxxxxxxxxxxxx</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="contact contents" id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <dl class="contact__input">
+          <dt><label for="name">NAME</label></dt>
+          <dd><input type="text" id="name" name="name" placeholder="" maxlength="20" required></dd>
+          <dt><label for="email">E-mail</label></dt>
+          <dd><input type="text" id="email" name="email" placeholder="" maxlength="20" required></dd>
+          <dt><label for="message">MESSAGE</label></dt>
+          <dd><textarea id="message" name="message" row="5" cols="30"></textarea></dd>
+        </dl>          
+        <input class="contact__submit" type="submit" value="送信">            
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__copyright">2023 My Works</small>
+  </footer>
+</body>
+</html>
