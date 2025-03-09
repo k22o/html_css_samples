@@ -29,61 +29,38 @@
 
       <section class="inputTag">
         <h3>inputタグの使い分け</h3>            
-        <table>
-          <tr>
-            <td>URL</td>
-            <td><input type="url" name="url"></td>
-          </tr>
-          <tr>
-            <td>パスワード</td>
-            <td><input type="password" name="password"></td>
-          </tr>
-          <tr>
-            <td>メール</td>
-            <td><input type="email" name="email"></td>
-          </tr>
+        <dl>
+          <dt>URL</dt>
+          <dd><input type="url" name="url"></dd>
+          <dt>パスワード</dt>
+          <dd><input type="password" name="password"></dd>
+          <dt>メール</dt>
+          <dd><input type="email" name="email"></dd>
           <!-- 四則演算前提ならnumberでOK -->
-          <tr>
-            <td>購入数</td>
-            <td>
-              <input type="number" name="number" min="5" max="100" step="5">
-              <br>
-              <small class="inputNote">※最小5、最大100個まで、5個単位</small>
-            </td>
-            
-          </tr>
+          <dt>購入数</dt>
+          <dd>
+            <input type="number" name="number" min="5" max="100" step="5">
+            <br>
+            <small class="inputNote">※最小5、最大100個まで、5個単位</small>
+          </dd>          
           <!-- ただの文字列としての数値がほしいなら、inputmodeで指定する -->
-          <tr>
-            <td>郵便番号</td>
-            <td><input type="text" name="number" inputmode="numeric" placeholder="100-0000"></td>
-          </tr>
-            <!-- ハイフンをいれさせるなら、inputを分ける方がいい -->
-            <tr>
-            <td>電話番号1</td>
-            <td><input type="tel" name="tel1"> - <input type="tel" name="tel2"> - <input type="tel" name="tel3"></td>
-          </tr>
+          <dt>郵便番号</dt>
+          <dd><input type="text" name="number" inputmode="numeric" placeholder="100-0000"></dd>
+          <!-- ハイフンをいれさせるなら、inputを分ける方がいい -->
+          <dt>電話番号1</dt>
+          <dd><input type="tel" name="tel1"> - <input type="tel" name="tel2"> - <input type="tel" name="tel3"></dd>
           <!-- 正規表現でバリデーションできる -->
-          <tr>
-            <td>電話番号2</td>
-            <td><input type="tel" name="tel" placeholder="090xxxxxxxx" pattern="[0-9]+"></td>
-          </tr>
-          <tr>
-            <td>日付</td>
-            <td><input type="date" name="date"></td>              
-          </tr>
-          <tr>
-            <td>時間</td>
-            <td><input type="time" name="time"></td>
-          </tr>
-          <tr>
-            <td>range</td>
-            <td><input type="range" name="range" min="0" max="11"></td>
-          </tr>
-          <tr>
-            <td>color</td>
-            <td><input type="color" name="color"></td>
-          </tr>
-        </table>
+          <dt>電話番号2</dt>
+          <dd><input type="tel" name="tel" placeholder="090xxxxxxxx" pattern="[0-9]+"></dd>
+          <dt>日付</dt>
+          <dd><input type="date" name="date"></dd>              
+          <dt>時間</dt>
+          <dd><input type="time" name="time"></dd>
+          <dt>range</dt>
+          <dd><input type="range" name="range" min="0" max="11"></dd>
+          <dt>color</dt>
+          <dd><input type="color" name="color"></dd>
+        </dl>
         <input type="hidden" name="hidden" value="1">
         <p>input-buttonの機能は、jsで実装する</p>
         <input type="button" value="button">

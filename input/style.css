@@ -29,6 +29,19 @@ h3 {
   max-width: none;
 }
 
+.inputTag dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inputTag dt {
+  width: 20%;
+  padding: 5px 0;
+}
+.inputTag dd {
+  margin-left: 0;
+  width: 80%;
+  padding: 5px 0;
+}
 .inputTag input {
   padding: 10px 20px 8px 20px;
   border-radius: 4px;
