@@ -1,0 +1,160 @@
+$break-point-sp: 896px;
+$border-point: 1px;
+$color-black: #333333;
+$color-gray: #C3C3C3;
+$color-white: #FFF;
+
+html {
+    font-size: 100%;
+}
+
+body {
+    text-align: center;
+    max-width: 1000px;    
+    font-size: 0.75rem;
+    color: $color-black;
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+ul {
+    padding-left:0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 46px 0 26px 0;
+    border-bottom: $border-point solid $color-gray;
+    @media screen and (max-width: $break-point-sp) {
+        padding-bottom: 16px;
+        border-bottom: none;
+    }
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        height: 19px;
+    }
+    &__nav {
+        display: flex;
+        margin: 36px auto 0;
+        max-width: 800px;
+        justify-content: space-between;
+    }
+    &__navList {
+        display: flex;
+        gap: 14px;
+        @media screen and (max-width: $break-point-sp) {
+            margin: 0 auto;
+            &--login {
+                gap: 0px;
+                display: none;       
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    gap: 60px;
+    margin: 50px auto 0;
+    max-width: 800px;
+    @media screen and (max-width: $break-point-sp) {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+    }
+}
+
+.goodsImage {
+    &__image {
+        max-width: 400px;
+        flex-shrink: 0; //画像が縮小されるのを防ぐ
+        @media screen and (max-width: $break-point-sp) {
+            max-width: 100%;
+        }    
+    }
+}
+
+.detail {
+    margin: 0 auto;
+    text-align: left;
+    &__title {
+        display: block;
+        padding: 20px 0;
+        font-size: 1rem;
+        border-top: $color-gray solid 1px;
+        border-bottom: $color-gray solid 1px;
+    }
+    &__explanation {
+        margin-top: 20px;
+        line-height: 1.9;
+    }
+    &__price {
+        margin-top: 30px;
+    }
+    &__stock {
+        width: 100%;
+        margin-top: 30px; 
+        text-align: center;
+        border-collapse: collapse;
+        th,td {
+            height: 34px;
+            font-weight: 400;
+            border-top: $border-point solid $color-gray;
+            border-right: $border-point solid $color-gray;
+            &:last-child {
+                padding-right: 10px;
+                padding-left: 10px;
+                border-right: none;
+            }
+            &:not(:last-child) {
+                width: 20%;
+            }
+        }
+        th {
+            border-top: none;
+        }
+        select {
+            width: 100%;
+        }
+    }
+    &__addCart {
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        color: $color-white;
+        background-color: #4B4B4B;
+        border: none;
+    }
+    &__type {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        border-collapse: collapse;
+        th {
+            background-color: #ECEBEB;
+        }
+        th,td {
+            height: 34px;
+            font-weight: 400;
+            border: $border-point solid $color-gray;
+            &:first-child {
+                width: 16%;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 110px;
+    padding-bottom: 10px;
+    font-size: 0.625rem;
+}
