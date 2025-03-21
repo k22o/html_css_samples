@@ -3,10 +3,6 @@ body {
   font-size: 0.9rem;
 }
 
-ul, ol {
-  list-style: none;
-}
-
 .mainSection {
   max-width: 960px;
   margin: 100px auto 0;

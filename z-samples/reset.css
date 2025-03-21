@@ -11,10 +11,10 @@ a {
     text-decoration: none;
 }
 
-/* ul, ol {
+ul, ol {
     list-style: none;
     padding: 0;
-}   */
+}  
 
 ol,ul,th,td,dd,dl,table {
     margin: 0;
