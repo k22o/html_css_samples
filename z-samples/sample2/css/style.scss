@@ -3,22 +3,13 @@ $border-point: 1px;
 $color-black: #2B2A27;
 $color-gray: #CCC;
 
-html {
-    font-size: 100%;
-}
-
 body {
     color: $color-black;
     font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
 }
 
-ul {
-    padding-left:0;
-}
-
 a {
     color: $color-black;
-    text-decoration: none;
 }
 
 h1 {

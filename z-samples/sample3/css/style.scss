@@ -6,17 +6,9 @@ $color-white: #FFF;
 $section-margin-base: 130px;
 $section-margin-base-sp: 70px;
 
-html {
-    font-size: 100%;
-}
-
 body {
     color: $color-black;
     font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
-}
-
-ul {
-    padding-left:0;
 }
 
 li {
@@ -25,7 +17,6 @@ li {
 
 a {
     color: $color-black;
-    text-decoration: none;
 }
 
 h1 {
@@ -121,7 +112,6 @@ h2 {
     }       
     &__table {
         margin-top: 65px;
-        border-collapse: collapse;
         width: 100%;
         tr {
             border-top: $border-point solid $color-gray;
@@ -171,7 +161,6 @@ h2 {
             width: 20%;
         }
         dd {
-            margin-left: 0;
             width: 80%;
             @media screen and (max-width: $break-point-sp) {
                 width:100%;

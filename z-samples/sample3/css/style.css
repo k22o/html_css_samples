@@ -1,14 +1,6 @@
-html {
-  font-size: 100%;
-}
-
 body {
   color: #24292E;
   font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
-}
-
-ul {
-  padding-left: 0;
 }
 
 li {
@@ -17,7 +9,6 @@ li {
 
 a {
   color: #24292E;
-  text-decoration: none;
 }
 
 h1 {
@@ -118,7 +109,6 @@ h2 {
 }
 .news__table {
   margin-top: 65px;
-  border-collapse: collapse;
   width: 100%;
 }
 .news__table tr {
@@ -175,7 +165,6 @@ h2 {
   width: 20%;
 }
 .contact__input dd {
-  margin-left: 0;
   width: 80%;
 }
 @media screen and (max-width: 600px) {

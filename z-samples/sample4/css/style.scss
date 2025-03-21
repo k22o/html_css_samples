@@ -4,10 +4,6 @@ $color-black: #333333;
 $color-gray: #C3C3C3;
 $color-white: #FFF;
 
-html {
-    font-size: 100%;
-}
-
 body {
     text-align: center;
     max-width: 1000px;    
@@ -16,17 +12,12 @@ body {
     font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
 }
 
-ul {
-    padding-left:0;
-}
-
 li {
     list-style: none;
 }
 
 a {
     color: $color-black;
-    text-decoration: none;
 }
 
 .header {
@@ -104,7 +95,6 @@ a {
         width: 100%;
         margin-top: 30px; 
         text-align: center;
-        border-collapse: collapse;
         th,td {
             height: 34px;
             font-weight: 400;
