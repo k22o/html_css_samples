@@ -1,0 +1,355 @@
+$break-point-sp: 900px;
+$border-point: 1px;
+$color-black: #000;
+$color-gray: #CCC;
+$color-background-gray: #F0F0F0;
+$color-white: #FFF;
+
+body {
+    margin: 0 auto;
+    font-size: 0.875rem;
+    background-color: $color-background-gray;
+}
+
+img {
+    width:100%;
+}
+
+a {
+    color: $color-black;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+
+    &__en {
+        display: block;
+        font-size: 2.25rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    &__ja {    
+        display: block;
+        font-size: 0.875rem;
+        margin-top: 10px;
+        &::after {
+            display:block;
+            height: 36px;
+            width: 30px;
+            content: "";
+            border-bottom: $border-point solid $color-black;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    
+    &__logoWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left:100px;
+        gap: 60px;
+
+        @media screen and (max-width: $break-point-sp) {
+            flex-direction: column;
+            padding-left: 16px;
+            gap: 8px;
+            align-items: normal;
+        }    
+    }
+
+    &__logo {
+        width: 100px;
+        @media screen and (max-width: $break-point-sp) {
+            width: 80px;
+        }        
+    }
+
+    &__navigationList {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;        
+        height: 100%;
+        width: 200px;
+        background-color: $color-black;
+        font-size: 0.75rem;
+        a {
+            color: $color-white;
+        }
+        @media screen and (max-width: $break-point-sp) {
+            display: none;
+        }
+    }
+}
+
+.banner {
+    font-size: 0;
+    img {
+        width: 100%;
+        height: calc(100vh - 80px);
+        object-fit: cover;
+    }
+}
+
+.news {
+    margin: 120px auto 0;
+    max-width: 1000px;
+
+    @media screen and (max-width: $break-point-sp) {
+        margin: 80px 16px 0 16px;
+    }
+
+    &__list {
+        display: flex;       
+        width: 100%;
+        @media screen and (max-width: $break-point-sp) {
+            flex-direction: column;
+        }
+
+        li {
+            padding: 10px 20px;
+            width: calc(100%/3);
+            &:not(:first-child) {
+                border-left: $border-point solid $color-black;
+                @media screen and (max-width: $break-point-sp) {
+                    border-left: none;
+                }    
+            }
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+    }
+
+    &__tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width:50px;
+        height: 20px;
+        color: $color-white;
+        background-color: $color-black;
+        font-size: 0.75rem;
+    }
+
+    &__title {
+        margin-top: 16px;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content:left;
+    flex-direction: row-reverse;
+    gap: 70px;
+    margin-top: 120px;
+
+    @media screen and (max-width: $break-point-sp) {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-top: 90px;
+    }
+
+    &__banner {
+        width: 55%;
+        @media screen and (max-width: $break-point-sp) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            @media screen and (max-width: $break-point-sp) {
+                height: 300px;
+            }    
+        }
+    }
+
+    &__description {
+        margin-top: 180px;
+        margin-right: 70px;
+        @media screen and (max-width: $break-point-sp) {
+            margin: 0 16px;
+        }
+    }
+
+    &__text {
+        margin-top: 50px;
+    }
+}
+
+.business {
+    margin: 120px auto 0;
+    max-width: 1000px;
+    @media screen and (max-width: $break-point-sp) {
+        margin: 90px 16px 0 16px;
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+        height: 800px;
+        @media screen and (max-width: $break-point-sp) {
+            gap: 30px;
+            height: auto;
+        }
+    
+        img {
+            margin-top: 10px;
+        }
+ 
+        li {
+            width: 46%;
+            @media screen and (max-width: $break-point-sp) {
+                width: 100%;
+            }        
+            &:first-child {
+                margin-top: 100px;
+                @media screen and (max-width: $break-point-sp) {
+                    margin-top: 0;
+                }        
+            }
+        }
+    }
+
+    &__category {
+        margin: 0;
+        &::before {
+            margin-right: 10px;
+            content: "‐"; 
+        }
+    }
+}
+
+.company {
+    display: flex;
+    height: 650px;
+    margin-top: 120px;
+    position: relative;
+    @media screen and (max-width: $break-point-sp) {
+        height: auto;
+        flex-direction: column;
+        margin: 80px 16px 0 16px;
+    }
+
+    &__contentWrapper {
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 100px 8% 100px 6%;
+        background-color: $color-white;
+        width: 55%;
+        @media screen and (max-width: $break-point-sp) {
+            position: static;
+            width: 100vw;
+            padding: 40px 20px 40px 20px;
+        }    
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: left;
+        align-items:flex-start;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        @media screen and (max-width: $break-point-sp) {
+            flex-direction: column;
+        }
+
+        dt, dd {
+            margin-top: 10px;
+        }
+
+        dt {
+            width: 30%;
+        }
+        dd {
+            width: 70%;
+            @media screen and (max-width: $break-point-sp) {
+                margin-left: 16px;
+            }    
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 115px;
+        right: 0;
+        width: 53%;
+        @media screen and (max-width: $break-point-sp) {
+            position: static;
+            margin-top: 20px;
+            width: 100%;
+        }    
+
+        img {
+            height: 400px;
+            object-fit: cover;
+            @media screen and (max-width: $break-point-sp) {
+                height: auto;
+            }    
+        }
+    }
+}
+
+
+.footer {
+    margin: 120px auto 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: $color-white;
+
+    @media screen and (max-width: $break-point-sp) {
+        margin-top: 0;
+        padding: 48px 16px 20px 16px;
+    }    
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    &__companyInfo {
+        display: flex;
+        justify-content: space-between;    
+        @media screen and (max-width: $break-point-sp) {
+            flex-direction: column;
+            gap: 10px;
+        }    
+    }
+
+    &__logo {
+        width: 100px;
+        @media screen and (max-width: $break-point-sp) {
+            width: 80px;
+        }    
+    }
+
+    &__copyright {
+        display: block;
+        margin-top: 40px;
+    }
+}

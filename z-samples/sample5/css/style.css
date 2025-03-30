@@ -1,0 +1,364 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  font-size: 0.875rem;
+  background-color: #F0F0F0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+.title__en {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.3rem;
+}
+.title__ja {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+.title__ja::after {
+  display: block;
+  height: 36px;
+  width: 30px;
+  content: "";
+  border-bottom: 1px solid #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header__logoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  gap: 60px;
+}
+@media screen and (max-width: 900px) {
+  .header__logoWrapper {
+    flex-direction: column;
+    padding-left: 16px;
+    gap: 8px;
+    align-items: normal;
+  }
+}
+.header__logo {
+  width: 100px;
+}
+@media screen and (max-width: 900px) {
+  .header__logo {
+    width: 80px;
+  }
+}
+.header__navigationList {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header__contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 200px;
+  background-color: #000;
+  font-size: 0.75rem;
+}
+.header__contact a {
+  color: #FFF;
+}
+@media screen and (max-width: 900px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+.banner {
+  font-size: 0;
+}
+.banner img {
+  width: 100%;
+  height: calc(100vh - 80px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news {
+  margin: 120px auto 0;
+  max-width: 1000px;
+}
+@media screen and (max-width: 900px) {
+  .news {
+    margin: 80px 16px 0 16px;
+  }
+}
+.news__list {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .news__list {
+    flex-direction: column;
+  }
+}
+.news__list li {
+  padding: 10px 20px;
+  width: 33.3333333333%;
+}
+.news__list li:not(:first-child) {
+  border-left: 1px solid #000;
+}
+@media screen and (max-width: 900px) {
+  .news__list li:not(:first-child) {
+    border-left: none;
+  }
+}
+.news__head {
+  display: flex;
+  align-items: center;
+}
+.news__tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 50px;
+  height: 20px;
+  color: #FFF;
+  background-color: #000;
+  font-size: 0.75rem;
+}
+.news__title {
+  margin-top: 16px;
+}
+
+.about {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  gap: 70px;
+  margin-top: 120px;
+}
+@media screen and (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin-top: 90px;
+  }
+}
+.about__banner {
+  width: 55%;
+}
+@media screen and (max-width: 900px) {
+  .about__banner {
+    width: 100%;
+  }
+}
+.about__banner img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .about__banner img {
+    height: 300px;
+  }
+}
+.about__description {
+  margin-top: 180px;
+  margin-right: 70px;
+}
+@media screen and (max-width: 900px) {
+  .about__description {
+    margin: 0 16px;
+  }
+}
+.about__text {
+  margin-top: 50px;
+}
+
+.business {
+  margin: 120px auto 0;
+  max-width: 1000px;
+}
+@media screen and (max-width: 900px) {
+  .business {
+    margin: 90px 16px 0 16px;
+  }
+}
+.business__list {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 50px;
+  flex-direction: column;
+  height: 800px;
+}
+@media screen and (max-width: 900px) {
+  .business__list {
+    gap: 30px;
+    height: auto;
+  }
+}
+.business__list img {
+  margin-top: 10px;
+}
+.business__list li {
+  width: 46%;
+}
+@media screen and (max-width: 900px) {
+  .business__list li {
+    width: 100%;
+  }
+}
+.business__list li:first-child {
+  margin-top: 100px;
+}
+@media screen and (max-width: 900px) {
+  .business__list li:first-child {
+    margin-top: 0;
+  }
+}
+.business__category {
+  margin: 0;
+}
+.business__category::before {
+  margin-right: 10px;
+  content: "‐";
+}
+
+.company {
+  display: flex;
+  height: 650px;
+  margin-top: 120px;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .company {
+    height: auto;
+    flex-direction: column;
+    margin: 80px 16px 0 16px;
+  }
+}
+.company__contentWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px 8% 100px 6%;
+  background-color: #FFF;
+  width: 55%;
+}
+@media screen and (max-width: 900px) {
+  .company__contentWrapper {
+    position: static;
+    width: 100vw;
+    padding: 40px 20px 40px 20px;
+  }
+}
+.company__detail {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+@media screen and (max-width: 900px) {
+  .company__detail {
+    flex-direction: column;
+  }
+}
+.company__detail dt, .company__detail dd {
+  margin-top: 10px;
+}
+.company__detail dt {
+  width: 30%;
+}
+.company__detail dd {
+  width: 70%;
+}
+@media screen and (max-width: 900px) {
+  .company__detail dd {
+    margin-left: 16px;
+  }
+}
+.company__detail dd p {
+  margin: 0;
+}
+.company__logo {
+  position: absolute;
+  top: 115px;
+  right: 0;
+  width: 53%;
+}
+@media screen and (max-width: 900px) {
+  .company__logo {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.company__logo img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .company__logo img {
+    height: auto;
+  }
+}
+
+.footer {
+  margin: 120px auto 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #FFF;
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    margin-top: 0;
+    padding: 48px 16px 20px 16px;
+  }
+}
+.footer__inner {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.footer__companyInfo {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .footer__companyInfo {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.footer__logo {
+  width: 100px;
+}
+@media screen and (max-width: 900px) {
+  .footer__logo {
+    width: 80px;
+  }
+}
+.footer__copyright {
+  display: block;
+  margin-top: 40px;
+}/*# sourceMappingURL=style.css.map */
