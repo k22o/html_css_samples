@@ -31,7 +31,7 @@ h3 {
 }
 
 .sample1 {
-  height: 300px;
+  height: 400px;
 }
 .sample1 .left {
   display: inline-block;
@@ -42,6 +42,11 @@ h3 {
   display: inline-block;
   width: 600px;
   height: 50%;
+}
+.sample1 .maxWidth {
+  background-color: salmon;
+  max-width: 700px;
+  margin: 10px auto;
 }
 
 .sample2 {

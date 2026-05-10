@@ -193,13 +193,15 @@ h2 {
 
 .footer {
   margin-top: 130px;
-  background-color: #24292E;
-  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .footer {
     margin-top: 70px;
   }
+}
+.footer {
+  background-color: #24292E;
+  text-align: center;
 }
 .footer__copyright {
   display: block;
