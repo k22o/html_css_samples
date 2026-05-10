@@ -1,9 +1,13 @@
 # HTML/CSS テンプレート集
 
 html5ベース。
-ソースコードの内容は、一部のサイトを参考にしています。
+ソースコードの内容は、一部のサイトや本を参考にしています。
 
 - https://www.udemy.com/course/front-dev-tutorial/
+- HTML+CSS コーディングの強化書
+
+また、SEOについては、以下に確認すべき観点がまとめられている。
+https://github.com/k22o/tools/blob/master/ai-coding/claude/backup/skills/review-acessibility/SKILL.md
 
 ## contents
 
@@ -35,14 +39,7 @@ html5ベース。
 
 ### コーディングルール
 
-※ これに従っていないものも多いが、z-samplesに追加するときは必ず従うこと
-
-- スタイルはclassで設定する
-- BEM記法 + lowerCamelCaseで 記載
-- 余白は、margin-topを基本とする
-- 画面サイズの変動を考慮した設計とする
-- font-sizeは、remで記述する
-- font-weightは、bold:700とする
+[コーディングルール](./css-rules.md)を参照
 
 ## 補足
 
@@ -56,6 +53,14 @@ html5ベース。
 - `.p1 > .p2` : 直下セレクタ。p1の直下 (1つ下の階層) のp2
 
 ## 参考
+
+### 単位
+
+- px
+- %
+- em
+- rem
+- vh/vh
 
 ### 便利なライブラリなど
 
