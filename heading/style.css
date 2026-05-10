@@ -3,8 +3,8 @@
   font-size: 1.5rem;
   width: 300px;
   height: 50px;
-  line-height: 50px;
-  padding: 0.5em;
+  line-height: 2.083;
+  padding: 12px;
   margin: 70px;
   color: #494949;
 }
@@ -64,7 +64,7 @@
 }
 .heading5 span {
   display: block;
-  padding: 0.75em 1em;
+  padding: 12px 16px;
   border: 1px dashed #FFF;
 }
 .heading5:before, .heading5:after {
@@ -94,7 +94,7 @@
 .heading6:after {
   content: "litte-heading";
   position: absolute;
-  top: -25px;
+  top: 25px;
   left: 10px;
   background: #FFF;
   font-size: 0.875rem;
@@ -106,7 +106,7 @@
   min-width: 400px;
   max-width: 400px;
   list-style: none;
-  margin: 0 auto 0 6em;
+  margin: 0 auto 0 96px;
   padding-left: 20px;
   border-left: 6px solid #142c5b;
   box-sizing: border-box;
@@ -118,9 +118,9 @@
   position: relative;
 }
 .timeline .time-schedule span.time {
-  width: 5em;
+  width: 80px;
   display: inline-block;
-  margin-left: -8em;
+  margin-left: -128px;
   padding: 0 0 5px;
   margin-top: 15px;
   vertical-align: top;

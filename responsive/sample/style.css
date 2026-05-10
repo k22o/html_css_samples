@@ -100,7 +100,7 @@ header {
   }
   .gnav__link {
     display: block;
-    padding: 1em;
+    padding: 18px;
     font-size: 1.125rem;
   }
   .gnav__link.current::after {

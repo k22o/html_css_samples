@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sass style.scss style.css)",
+      "Bash(npx sass *)",
+      "Bash(sed -i 's/margin: 0 1em 0 0;/margin: 0 16px 0 0;/' 's/padding: 0\\\\.3em 0\\\\.3em 0\\\\.3em 2em;/padding: 5px 5px 5px 32px;/' /mnt/c/Users/kanat/works/html_css_samples/input/style.scss)",
+      "Bash(sed -i 's/top: 0\\\\.25em;/top: 4px;/g' /mnt/c/Users/kanat/works/html_css_samples/input/style.scss)",
+      "Bash(sed -i 's/width: 1\\\\.375em;/width: 22px;/g' /mnt/c/Users/kanat/works/html_css_samples/input/style.scss)",
+      "Bash(sed -i 's/height: 1\\\\.375em;/height: 22px;/g' /mnt/c/Users/kanat/works/html_css_samples/input/style.scss)",
+      "Bash(sed -i 's/top: 0\\\\.5em;/top: 8px;/g' /mnt/c/Users/kanat/works/html_css_samples/input/style.scss)"
+    ]
+  }
+}

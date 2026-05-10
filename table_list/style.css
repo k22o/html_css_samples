@@ -52,10 +52,10 @@ h3 {
 }
 .list .list5 dt {
   width: 120px;
-  margin-right: 0.5em;
+  margin-right: 8px;
 }
 .list .list5 dd {
-  margin-left: 1em;
+  margin-left: 16px;
 }
 .list .list5 {
   /* 親要素でdtとddを縦に並べる */
