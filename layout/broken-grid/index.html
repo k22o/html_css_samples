@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>layout-broken-grid</title>
+</head>
+<body>
+    <main class="container">
+        <h1>ブロークングリッドレイアウト</h2>
+
+        <section class="description">
+            <h2>ブロークングリッドレイアウトとは</h2>
+            <p>通常のグリッドの整列を意図的に崩し、要素をグリッドの境界をまたいで重ねることで動的・デザイン性の高いレイアウトを実現する手法。</p>
+            <ul>
+                <li><code>CSS Grid</code> の <code>grid-column</code> / <code>grid-row</code> でセルをまたがせる</li>
+                <li><code>z-index</code> で重なり順を制御する</li>
+                <li><code>transform: translate()</code> や負のマージンでグリッド外にはみ出させる</li>
+            </ul>
+        </section>
+
+        <section class="sample1">
+            <h3>サンプル1: 画像×テキストのオーバーラップ</h3>
+            <p class="note">
+                4列×3行のグリッドで、画像ブロック（col1〜2 / row1〜2）とテキストブロック（col2〜4 / row2〜3）が
+                <strong>col2・row2 のセルで重なる</strong>。<code>z-index</code> でテキストを前面に。
+            </p>
+            <div class="broken-grid1">
+                <div class="bg1__image">Image</div>
+                <div class="bg1__text">
+                    <h4>見出しテキスト</h4>
+                    <p>グリッドの境界を越えてテキストブロックが画像に重なっています。</p>
+                </div>
+                <div class="bg1__accent"></div>
+            </div>
+            <table class="code-note">
+                <thead><tr><th>要素</th><th>grid-column</th><th>grid-row</th><th>z-index</th></tr></thead>
+                <tbody>
+                    <tr><td>.bg1__image</td><td>1 / 3</td><td>1 / 3</td><td>1</td></tr>
+                    <tr><td>.bg1__text</td><td>2 / 5</td><td>2 / 4</td><td>2（前面）</td></tr>
+                    <tr><td>.bg1__accent</td><td>4 / 5</td><td>1 / 2</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="sample2">
+            <h3>サンプル2: position: absolute による配置</h3>
+            <p class="note">
+                親要素に <code>position: relative</code> を指定し、子要素を <code>position: absolute</code> で
+                <code>top</code> / <code>left</code> / <code>right</code> / <code>bottom</code> で自由配置する。
+                グリッドなしでも重なりや「ずれ」を表現できる。
+            </p>
+            <div class="broken-grid2">
+                <div class="bg2__visual">Visual</div>
+                <div class="bg2__card">
+                    <h4>テキストカード</h4>
+                    <p>親要素の左50%・上80pxの位置に absolute 配置。ビジュアルブロックと重なる。</p>
+                </div>
+                <div class="bg2__accent"></div>
+            </div>
+            <table class="code-note">
+                <thead><tr><th>要素</th><th>position</th><th>配置の指定</th><th>z-index</th></tr></thead>
+                <tbody>
+                    <tr><td>.broken-grid2</td><td>relative</td><td>height: 320px を指定</td><td>—</td></tr>
+                    <tr><td>.bg2__visual</td><td>absolute</td><td>top:0 / left:0 / width:60% / height:200px</td><td>1</td></tr>
+                    <tr><td>.bg2__card</td><td>absolute</td><td>top:80px / left:50% / right:0</td><td>2（前面）</td></tr>
+                    <tr><td>.bg2__accent</td><td>absolute</td><td>bottom:0 / left:0 / width:40% / height:80px</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="sample3">
+            <h3>サンプル3: ヒーロー風オーバーラップ</h3>
+            <p class="note">
+                3列×3行のグリッド。背景カラーブロック（左）と白いコンテンツカード（右）が
+                中央列で重なる、ヒーローセクションでよく使われる構成。
+            </p>
+            <div class="broken-grid3">
+                <div class="bg3__visual">Visual</div>
+                <div class="bg3__content">
+                    <h4>ヒーローテキスト</h4>
+                    <p>背景色ブロックとテキストカードが中央列でオーバーラップ。奥行き・動きのある印象を作れる。</p>
+                </div>
+                <div class="bg3__deco"></div>
+            </div>
+            <table class="code-note">
+                <thead><tr><th>要素</th><th>grid-column</th><th>grid-row</th><th>z-index</th></tr></thead>
+                <tbody>
+                    <tr><td>.bg3__visual</td><td>1 / 3</td><td>1 / 3</td><td>1</td></tr>
+                    <tr><td>.bg3__content</td><td>2 / 4</td><td>2 / 4</td><td>2（前面）</td></tr>
+                    <tr><td>.bg3__deco</td><td>3 / 4</td><td>1 / 2</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>
