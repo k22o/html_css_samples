@@ -1,12 +1,12 @@
 @charset "UTF-8";
 h3 {
-  background-color: salmon;
   color: white;
+  background-color: salmon;
 }
 
 .container {
-  text-align: center;
   width: 80%;
+  text-align: center;
 }
 
 .sample1 .acd-label {
@@ -32,10 +32,10 @@ h3 {
 }
 
 .sample2 .acd2 {
-  margin: auto;
   width: 70%;
-  list-style: none;
+  margin: auto;
   padding-left: 0px;
+  list-style: none;
 }
 .sample2 .acd2 li {
   margin: 10px 0;
@@ -47,16 +47,16 @@ h3 {
   transition: max-height 0.3s ease;
 }
 .sample2 .acd2-title {
-  padding: 5px 5px;
-  margin: 0;
-  border: 2px solid lightcoral;
   position: relative;
+  margin: 0;
+  padding: 5px 5px;
+  border: 2px solid lightcoral;
   cursor: pointer;
 }
 .sample2 .acd2-title::before {
-  content: "＋";
   position: absolute;
   right: 10px;
+  content: "＋";
 }
 .sample2 .acd2-title.open + .acd-content {
   max-height: 200px;

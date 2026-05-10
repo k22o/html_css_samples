@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    width:100%;
+    width: 100%;
 }
 
 a {
@@ -29,15 +29,16 @@ a {
         font-size: 2.25rem;
         letter-spacing: 0.3rem;
     }
-    
-    &__ja {    
+
+    &__ja {
         display: block;
-        font-size: 0.875rem;
         margin-top: 10px;
+        font-size: 0.875rem;
+
         &::after {
-            display:block;
-            height: 36px;
+            display: block;
             width: 30px;
+            height: 36px;
             content: "";
             border-bottom: $border-point solid $color-black;
         }
@@ -49,27 +50,28 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    
+
     &__logoWrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left:100px;
         gap: 60px;
+        padding-left: 100px;
 
         @media screen and (max-width: $break-point-sp) {
             flex-direction: column;
-            padding-left: 16px;
-            gap: 8px;
             align-items: normal;
-        }    
+            gap: 8px;
+            padding-left: 16px;
+        }
     }
 
     &__logo {
         width: 100px;
+
         @media screen and (max-width: $break-point-sp) {
             width: 80px;
-        }        
+        }
     }
 
     &__navigationList {
@@ -81,14 +83,16 @@ a {
     &__contact {
         display: flex;
         justify-content: space-around;
-        align-items: center;        
-        height: 100%;
+        align-items: center;
         width: 200px;
-        background-color: $color-black;
+        height: 100%;
         font-size: 0.75rem;
+        background-color: $color-black;
+
         a {
             color: $color-white;
         }
+
         @media screen and (max-width: $break-point-sp) {
             display: none;
         }
@@ -97,6 +101,7 @@ a {
 
 .banner {
     font-size: 0;
+
     img {
         width: 100%;
         height: calc(100vh - 80px);
@@ -105,28 +110,31 @@ a {
 }
 
 .news {
-    margin: 120px auto 0;
     max-width: 1000px;
+    margin: 120px auto 0;
 
     @media screen and (max-width: $break-point-sp) {
         margin: 80px 16px 0 16px;
     }
 
     &__list {
-        display: flex;       
+        display: flex;
         width: 100%;
+
         @media screen and (max-width: $break-point-sp) {
             flex-direction: column;
         }
 
         li {
+            width: calc(100% / 3);
             padding: 10px 20px;
-            width: calc(100%/3);
+
             &:not(:first-child) {
                 border-left: $border-point solid $color-black;
+
                 @media screen and (max-width: $break-point-sp) {
                     border-left: none;
-                }    
+                }
             }
         }
     }
@@ -140,12 +148,12 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 10px;
-        width:50px;
+        width: 50px;
         height: 20px;
+        margin-left: 10px;
+        font-size: 0.75rem;
         color: $color-white;
         background-color: $color-black;
-        font-size: 0.75rem;
     }
 
     &__title {
@@ -155,7 +163,7 @@ a {
 
 .about {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     flex-direction: row-reverse;
     gap: 70px;
     margin-top: 120px;
@@ -168,6 +176,7 @@ a {
 
     &__banner {
         width: 55%;
+
         @media screen and (max-width: $break-point-sp) {
             width: 100%;
         }
@@ -176,15 +185,17 @@ a {
             width: 100%;
             height: 400px;
             object-fit: cover;
+
             @media screen and (max-width: $break-point-sp) {
                 height: 300px;
-            }    
+            }
         }
     }
 
     &__description {
         margin-top: 180px;
         margin-right: 70px;
+
         @media screen and (max-width: $break-point-sp) {
             margin: 0 16px;
         }
@@ -196,82 +207,91 @@ a {
 }
 
 .business {
-    margin: 120px auto 0;
     max-width: 1000px;
+    margin: 120px auto 0;
+
     @media screen and (max-width: $break-point-sp) {
         margin: 90px 16px 0 16px;
     }
 
     &__list {
         display: flex;
-        margin-top: 50px;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 50px;
-        flex-direction: column;
         height: 800px;
+        margin-top: 50px;
+
         @media screen and (max-width: $break-point-sp) {
             gap: 30px;
             height: auto;
         }
-    
+
         img {
             margin-top: 10px;
         }
- 
+
         li {
             width: 46%;
+
             @media screen and (max-width: $break-point-sp) {
                 width: 100%;
-            }        
+            }
+
             &:first-child {
                 margin-top: 100px;
+
                 @media screen and (max-width: $break-point-sp) {
                     margin-top: 0;
-                }        
+                }
             }
         }
     }
 
     &__category {
         margin: 0;
+
         &::before {
             margin-right: 10px;
-            content: "‐"; 
+            content: "‐";
         }
     }
 }
 
 .company {
+    position: relative;
     display: flex;
     height: 650px;
     margin-top: 120px;
-    position: relative;
+
     @media screen and (max-width: $break-point-sp) {
-        height: auto;
         flex-direction: column;
+        height: auto;
         margin: 80px 16px 0 16px;
     }
 
     &__contentWrapper {
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
+        width: 55%;
         padding: 100px 8% 100px 6%;
         background-color: $color-white;
-        width: 55%;
+
         @media screen and (max-width: $break-point-sp) {
             position: static;
             width: 100vw;
             padding: 40px 20px 40px 20px;
-        }    
+        }
     }
 
     &__detail {
         display: flex;
         justify-content: left;
-        align-items:flex-start;
+        align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 40px;
+
         @media screen and (max-width: $break-point-sp) {
             flex-direction: column;
         }
@@ -283,11 +303,14 @@ a {
         dt {
             width: 30%;
         }
+
         dd {
             width: 70%;
+
             @media screen and (max-width: $break-point-sp) {
                 margin-left: 16px;
-            }    
+            }
+
             p {
                 margin: 0;
             }
@@ -299,24 +322,27 @@ a {
         top: 115px;
         right: 0;
         width: 53%;
+
         @media screen and (max-width: $break-point-sp) {
             position: static;
-            margin-top: 20px;
             width: 100%;
-        }    
+            margin-top: 20px;
+        }
 
         img {
             height: 400px;
             object-fit: cover;
+
             @media screen and (max-width: $break-point-sp) {
                 height: auto;
-            }    
+            }
         }
     }
 }
 
 
 .footer {
+    max-width: none;
     margin: 120px auto 0;
     padding-top: 40px;
     padding-bottom: 20px;
@@ -325,27 +351,29 @@ a {
     @media screen and (max-width: $break-point-sp) {
         margin-top: 0;
         padding: 48px 16px 20px 16px;
-    }    
+    }
 
     &__inner {
-        margin: 0 auto;
         max-width: 1000px;
+        margin: 0 auto;
     }
 
     &__companyInfo {
         display: flex;
-        justify-content: space-between;    
+        justify-content: space-between;
+
         @media screen and (max-width: $break-point-sp) {
             flex-direction: column;
             gap: 10px;
-        }    
+        }
     }
 
     &__logo {
         width: 100px;
+
         @media screen and (max-width: $break-point-sp) {
             width: 80px;
-        }    
+        }
     }
 
     &__copyright {

@@ -10,10 +10,10 @@ body {
 }
 
 .header {
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 .header__logo {
   width: 120px;
@@ -46,10 +46,10 @@ body {
 }
 .about__profile {
   display: flex;
+  justify-content: center;
+  gap: 30px;
   margin-top: 70px;
   text-align: left;
-  gap: 30px;
-  justify-content: center;
 }
 @media screen and (max-width: 600px) {
   .about__profile {
@@ -69,13 +69,13 @@ body {
 }
 .about__name {
   display: block;
-  margin: 0 auto;
   max-width: 400px;
+  margin: 0 auto;
 }
 .about__content {
   display: block;
-  margin: 10px auto 0;
   max-width: 400px;
+  margin: 10px auto 0;
 }
 
 .bicycle {

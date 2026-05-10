@@ -25,13 +25,13 @@ a {
 }
 .title__ja {
   display: block;
-  font-size: 0.875rem;
   margin-top: 10px;
+  font-size: 0.875rem;
 }
 .title__ja::after {
   display: block;
-  height: 36px;
   width: 30px;
+  height: 36px;
   content: "";
   border-bottom: 1px solid #000;
 }
@@ -46,15 +46,15 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
   gap: 60px;
+  padding-left: 100px;
 }
 @media screen and (max-width: 900px) {
   .header__logoWrapper {
     flex-direction: column;
-    padding-left: 16px;
-    gap: 8px;
     align-items: normal;
+    gap: 8px;
+    padding-left: 16px;
   }
 }
 .header__logo {
@@ -74,10 +74,10 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
   width: 200px;
-  background-color: #000;
+  height: 100%;
   font-size: 0.75rem;
+  background-color: #000;
 }
 .header__contact a {
   color: #FFF;
@@ -99,8 +99,8 @@ a {
 }
 
 .news {
-  margin: 120px auto 0;
   max-width: 1000px;
+  margin: 120px auto 0;
 }
 @media screen and (max-width: 900px) {
   .news {
@@ -117,8 +117,8 @@ a {
   }
 }
 .news__list li {
-  padding: 10px 20px;
   width: 33.3333333333%;
+  padding: 10px 20px;
 }
 .news__list li:not(:first-child) {
   border-left: 1px solid #000;
@@ -136,12 +136,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
   width: 50px;
   height: 20px;
+  margin-left: 10px;
+  font-size: 0.75rem;
   color: #FFF;
   background-color: #000;
-  font-size: 0.75rem;
 }
 .news__title {
   margin-top: 16px;
@@ -194,8 +194,8 @@ a {
 }
 
 .business {
-  margin: 120px auto 0;
   max-width: 1000px;
+  margin: 120px auto 0;
 }
 @media screen and (max-width: 900px) {
   .business {
@@ -204,11 +204,11 @@ a {
 }
 .business__list {
   display: flex;
-  margin-top: 50px;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 50px;
-  flex-direction: column;
   height: 800px;
+  margin-top: 50px;
 }
 @media screen and (max-width: 900px) {
   .business__list {
@@ -244,15 +244,15 @@ a {
 }
 
 .company {
+  position: relative;
   display: flex;
   height: 650px;
   margin-top: 120px;
-  position: relative;
 }
 @media screen and (max-width: 900px) {
   .company {
-    height: auto;
     flex-direction: column;
+    height: auto;
     margin: 80px 16px 0 16px;
   }
 }
@@ -260,9 +260,9 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  width: 55%;
   padding: 100px 8% 100px 6%;
   background-color: #FFF;
-  width: 55%;
 }
 @media screen and (max-width: 900px) {
   .company__contentWrapper {
@@ -309,8 +309,8 @@ a {
 @media screen and (max-width: 900px) {
   .company__logo {
     position: static;
-    margin-top: 20px;
     width: 100%;
+    margin-top: 20px;
   }
 }
 .company__logo img {
@@ -325,6 +325,7 @@ a {
 }
 
 .footer {
+  max-width: none;
   margin: 120px auto 0;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -337,8 +338,8 @@ a {
   }
 }
 .footer__inner {
-  margin: 0 auto;
   max-width: 1000px;
+  margin: 0 auto;
 }
 .footer__companyInfo {
   display: flex;

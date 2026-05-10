@@ -115,7 +115,52 @@ line-height: 1.6;     // 単位なし
 
 ---
 
-## 7. SCSS
+## 7. プロパティの記載順
+
+以下の順に記載する。
+
+| 順 | グループ | 主なプロパティ |
+|----|----------|----------------|
+| 1 | ポジション | `position` `top` `right` `bottom` `left` `z-index` |
+| 2 | ボックス | `display` `flex-direction` `justify-content` `align-items` `gap` `grid-template-*` `width` `height` `margin` `padding` `overflow` |
+| 3 | テキスト | `font-size` `font-weight` `line-height` `letter-spacing` `text-align` `color` |
+| 4 | 装飾 | `background` `border` `border-radius` `box-shadow` `opacity` |
+| 5 | アニメーション | `transition` `animation` `transform` |
+
+```scss
+.card {
+    // 1. ポジション
+    position: relative;
+    z-index: 1;
+
+    // 2. ボックス
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 24px;
+    overflow: hidden;
+
+    // 3. テキスト
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #333;
+
+    // 4. 装飾
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    // 5. アニメーション
+    transition: opacity 0.3s;
+}
+```
+
+---
+
+## 8. SCSS
 
 - ネストは **3階層まで**（それ以上はクラスを分割する）
 - 変数・mixinは `_variables.scss` / `_mixins.scss` に切り出す（サンプル単体の場合は先頭にまとめる）

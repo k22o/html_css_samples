@@ -2,8 +2,8 @@ $backColor: white;
 $frontColor: black;
 
 h2 {
-    background-color: gray;
     color: white;
+    background-color: gray;
 }
 
 h3 {
@@ -16,53 +16,53 @@ h3 {
 
 .btn {
     position: relative;
-    color: $frontColor;
     width: 120px;
     height: 40px;
-    font-weight: 700;
-    background-color: $backColor;
-    border: 1px solid $frontColor;
     padding: 10px 25px;
     margin: 0px auto;
+    font-weight: 700;
+    color: $frontColor;
+    background-color: $backColor;
+    border: 1px solid $frontColor;
     cursor: pointer;
-    transition: all 0.4s;//hover時に、どの要素をどの速度で変化させるか
+    transition: all 0.4s; //hover時に、どの要素をどの速度で変化させるか
 
     &.colorChange {
         border-radius: 6px; //枠の丸み
+
         &:hover {
             color: $backColor;
             background-color: $frontColor;
-            letter-spacing: 2px;//文字の間隔が開く
+            letter-spacing: 2px; //文字の間隔が開く
         }
     }
 
     &.shadow {
-        //box-shadow: none;
         &:hover {
-            transform: translate(-2.5px, -2.5px);
             box-shadow: 5px 5px 0 0 gray;
+            transform: translate(-2.5px, -2.5px);
         }
     }
 
     &.slide {
         position: relative;
-        overflow: hidden; // 親要素の枠外を見えなくする <-> visible
         z-index: 1; // z-indexを指定しないと、文字がspanに消される
+        overflow: hidden; // 親要素の枠外を見えなくする <-> visible
 
         & span {
-            display: inline-block;
-            background-color: $frontColor;
-            width: 100%;
-            height: 100%;
             position: absolute;
             top: 0;
-            left: 0;            
+            left: 0;
+            z-index: -1;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: $frontColor;
             transform: translateX(-100%);
             transition: transform 0.4s;
-            z-index: -1;
         }
 
-        &:hover{
+        &:hover {
             color: white;
 
             span {
@@ -76,24 +76,24 @@ h3 {
     */
     &.slide2 {
         position: relative;
+        z-index: 1;
         overflow: hidden;
-        z-index: 1; 
 
         &::before {
-            content: '';//疑似要素の生成には、contentが必須。今回は文字不要につき空
-            display: inline-block;
-            background-color: $frontColor;
-            width: 100%;
-            height: 100%;
             position: absolute;
             top: 0;
-            left: 0;            
+            left: 0;
+            z-index: -1;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            content: ''; //疑似要素の生成には、contentが必須。今回は文字不要につき空
+            background-color: $frontColor;
             transform: translateX(-100%);
             transition: transform 0.4s ease-out;
-            z-index: -1;
         }
 
-        &:hover{
+        &:hover {
             color: white;
 
             &::before {
@@ -110,30 +110,30 @@ h3 {
 
         & span {
             display: inline-block;
-            transform: translateZ(30px)
+            transform: translateZ(30px);
         }
 
         &::before {
-            content: '';//疑似要素の生成には、contentが必須。今回は文字不要につき空
-            display: inline-block;
-            background-color: $frontColor;
-            width: 100%;
-            height: 100%;
             position: absolute;
             top: 0;
-            left: 0;            
-            transform: rotateX(90deg);
-            transition: all 0.4s;
-            transform-origin: top center;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            content: ''; //疑似要素の生成には、contentが必須。今回は文字不要につき空
+            background-color: $frontColor;
             opacity: 0;
+            transform: rotateX(90deg);
+            transform-origin: top center;
+            transition: all 0.4s;
         }
 
-        &:hover{
+        &:hover {
             color: $backColor;
 
             &::before {
-                transform: none;
                 opacity: 1;
+                transform: none;
             }
         }
     }
@@ -145,21 +145,21 @@ h3 {
             left: 0;
             width: 100%;
             height: 100%;
+            line-height: 38px;
             border: 1px solid $frontColor;
-            line-height: 38px; 
-            transition: all 0.4s;
             transform-origin: center center -25px;
+            transition: all 0.4s;
         }
 
         & .firstState {
-            background-color: $backColor;
             color: $frontColor;
+            background-color: $backColor;
             transform: rotateX(0);
         }
 
         & .secondState {
-            background-color: $frontColor;
             color: $backColor;
+            background-color: $frontColor;
             transform: rotateX(90deg);
         }
 

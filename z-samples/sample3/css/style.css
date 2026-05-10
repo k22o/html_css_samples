@@ -23,17 +23,17 @@ h2 {
 
 .header {
   display: flex;
-  max-width: 960px;
-  height: 270px;
   justify-content: space-between;
   align-items: center;
+  max-width: 960px;
+  height: 270px;
 }
 @media screen and (max-width: 600px) {
   .header {
-    margin: 20px auto 10px;
     flex-flow: column;
     gap: 10px;
     height: auto;
+    margin: 20px auto 10px;
   }
 }
 .header__list {
@@ -104,8 +104,8 @@ h2 {
   }
 }
 .news__table {
-  margin-top: 65px;
   width: 100%;
+  margin-top: 65px;
 }
 .news__table tr {
   border-top: 1px solid #C8C8C8;
@@ -119,8 +119,8 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   .news__table td {
-    width: 100%;
     display: block;
+    width: 100%;
   }
   .news__table td:first-child {
     padding-bottom: 0;
@@ -145,8 +145,8 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   .contact__input {
-    margin-top: 30px;
     flex-direction: column;
+    margin-top: 30px;
   }
 }
 .contact__input dt, .contact__input dd {
@@ -179,16 +179,16 @@ h2 {
 }
 .contact__submit {
   display: block;
+  width: 200px;
   margin: 30px auto 0;
   padding: 15px 0;
-  width: 200px;
-  background-color: #24292E;
   color: #FFF;
+  background-color: #24292E;
   transition-duration: 0.3s;
 }
 .contact__submit:hover {
-  background-color: #FFF;
   color: #24292E;
+  background-color: #FFF;
 }
 
 .footer {
@@ -200,8 +200,8 @@ h2 {
   }
 }
 .footer {
-  background-color: #24292E;
   text-align: center;
+  background-color: #24292E;
 }
 .footer__copyright {
   display: block;
