@@ -34,7 +34,7 @@ header {
   cursor: pointer;
 }
 .hamburger span {
-  position: fix;
+  position: fixed;
   width: 25px;
   height: 2px;
   background-color: #eee;

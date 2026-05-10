@@ -24,7 +24,7 @@ body {
 .header .mobile-menu-btn {
   background-color: unset;
   border: none;
-  outline: none !important;
+  outline: none;
   cursor: pointer;
   transition: transform 0.7s;
 }

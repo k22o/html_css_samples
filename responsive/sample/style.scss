@@ -1,6 +1,6 @@
-@import "components/header";
-@import "components/gnav";
-@import "components/footer";
+@use "components/header";
+@use "components/gnav";
+@use "components/footer";
 
 $themeColor: #43a73a;
 $white: #eee;

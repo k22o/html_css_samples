@@ -64,10 +64,6 @@ h3 {
   cursor: pointer;
 }
 
-.radioButton {
-  /*ラジオボタンスタイル*/
-  /*チェックボックススタイル*/
-}
 .radioButton input {
   opacity: 0;
   position: absolute;
@@ -80,11 +76,8 @@ h3 {
   vertical-align: middle;
   cursor: pointer;
 }
-.radioButton input[type=radio] {
-  /*ラジオボタンチェック印（選択）*/
-}
-.radioButton input[type=radio] + span {
-  /*ラジオボタンチェック印（未選択）*/
+.radioButton {
+  /*ラジオボタンスタイル*/
 }
 .radioButton input[type=radio] + span::before {
   content: "";
@@ -98,9 +91,15 @@ h3 {
   line-height: 1;
   background: #fff;
 }
+.radioButton input[type=radio] + span {
+  /*ラジオボタンチェック印（未選択）*/
+}
 .radioButton input[type=radio] + span::after {
   content: "";
   display: none;
+}
+.radioButton input[type=radio] {
+  /*ラジオボタンチェック印（選択）*/
 }
 .radioButton input[type=radio]:checked + span::after {
   display: block;
@@ -115,8 +114,8 @@ h3 {
   background: #965dd8;
   line-height: 1;
 }
-.radioButton input[type=checkbox] {
-  /*チェックボックスチェック時*/
+.radioButton {
+  /*チェックボックススタイル*/
 }
 .radioButton input[type=checkbox] + span::before {
   position: absolute;
@@ -129,6 +128,9 @@ h3 {
   background: #fff;
   line-height: 1;
   vertical-align: middle;
+}
+.radioButton input[type=checkbox] {
+  /*チェックボックスチェック時*/
 }
 .radioButton input[type=checkbox]:checked + span::after {
   display: block;
